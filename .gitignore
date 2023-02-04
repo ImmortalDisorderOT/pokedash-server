@@ -1,6 +1,7 @@
 ## Temp ignore - source building will come soon
 vc14/
 
+
 #################
 ## Visual Studio
 #################
@@ -53,8 +54,6 @@ cmake-build-*/
 *.pidb
 *.log
 *.scc
-*.dll
-*.exe
 
 # Visual C++ cache files
 ipch/
