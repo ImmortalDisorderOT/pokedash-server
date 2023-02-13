@@ -66,7 +66,7 @@ function onUse(player, item, fromPosition, target, toPosition, isHotkey)
 		player:sendCancelMessage("Sorry, not possible. This problem was reported.")
 		return true
 	end
-	local chance = monsterType:catchChance() * balls[ballKey].chanceMultiplier
+	local chance = monsterType:catchChance() * balls[ballKey].chanceMultiplier * 1.15
 	if player:getVocation():getName() == "Catcher" then
 		chance = chance * catcherCatchBuff
 	end
@@ -87,7 +87,7 @@ function onUse(player, item, fromPosition, target, toPosition, isHotkey)
 	else
 		player:setStorageValue(storageTry, player:getStorageValue(storageTry) + 1)
 	end
-	if math.random(1, 300) <= chance then -- caught
+	if math.random(1, 250) <= chance then -- caught
 		-- check how many pokeballs the player has
 		if player:getSlotItem(CONST_SLOT_BACKPACK) and player:getSlotItem(CONST_SLOT_BACKPACK):getEmptySlots() >= 1 and player:getFreeCapacity() >= 1 then -- add to backpack
 			addEvent(doAddPokeball, delayMessage, player:getId(), name, level, initialBoost, ballKey, false, delayMessage)

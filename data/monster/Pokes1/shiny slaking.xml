@@ -25,7 +25,7 @@
 		<flag rideable="0" />
 		<flag surfable="0" />
 		<flag canteleport="0" />
-		<flag catchchance="1" />
+		<flag catchchance="2" />
 		<flag moveMagicAttackBase="143" />
 		<flag moveMagicDefenseBase="98" />
 	</flags>
