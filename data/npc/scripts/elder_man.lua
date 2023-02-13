@@ -15,24 +15,24 @@ function creatureSayCallback(cid, type, msg)
 	end
 	
 	if msgcontains(msg, 'bye') or msgcontains(msg, 'no') or msgcontains(msg, 'nao') then
-		selfSay('Va, jovem, viva sua vida plenamente!', cid)
+		selfSay('Go, young man, live your life to the fullest!', cid)
 		npcHandler:releaseFocus(cid)
 	elseif msgcontains(msg, 'mission') or msgcontains(msg, 'quest') then
-		selfSay('Veja, nao preciso da sua ajuda para quests, pois em minha vida ja completei todas.', cid)
+		selfSay('See, I don\'t need your help with quests, because in my life I have already completed them all.', cid)
 	elseif msgcontains(msg, 'pokemon') or msgcontains(msg, 'pokemons') then
-		selfSay('Durante minha vida eu consegui ver todos os pokemons, inclusive seus mais raros ancestrais.', cid)
+		selfSay('During my lifetime I have been able to see all pokemons, including their rarest ancestors.', cid)
 	elseif msgcontains(msg, 'ancestral') or msgcontains(msg, 'ancestrais') or msgcontains(msg, 'ancient') or msgcontains(msg, 'elder') then
-		selfSay('Sim, muito antigamente existiam os pokemons ancestrais, conhecidos como {ancient}s ou {elder}s. Eles possuiam uma forca extraordinaria. Fico aqui imaginando... quem sabe nao existe uma forma de um pokemon retornar a sua forma ancestral? Ah... se pelo menos eu tivesse uma {pista}...', cid)
-	elseif msgcontains(msg, 'pista') or msgcontains(msg, 'pistas') then
-		selfSay('Veja, meu jovem, se me trouxer pistas ou informacoes talvez possa descobrir como regredir um pokemon para sua forma ancestral.', cid)
+		selfSay('Yes, long ago there were the ancestral pokemons, known as {ancient}s or {elder}s. They had extraordinary power. I wonder... maybe there is a way for a pokemon to return to its ancestral form? Ah... if only I had a clue...', cid)
+	elseif msgcontains(msg, 'track') or msgcontains(msg, 'tracks') then
+		selfSay('You see, young man, if you bring me clues or information I might be able to figure out how to regress a pokemon to its ancestral form.', cid)
 	elseif msgcontains(msg, 'hieroglifo') or msgcontains(msg, 'hieroglyph') then
 		local player = Player(cid)
 		if player:removeItem("ancient hieroglyph", 1) then
-			selfSay('Por Arceus! Como conseguiu este hieroglifo!? Isso nao importa, acho q talvez consiga fazer uma pedra com isso para regredir um pokemon a sua forma ancestral, mas preciso de tempo... Pronto, aqui esta uma {stone} que consegue regredir pokemons, mas talvez uma unica nao seja suficiente', cid)
+			selfSay('By Arceus! How did you get this glyph? It doesn\'t matter, I think I might be able to make a stone with it to regress a pokemon to its ancestral form, but I need time... Okay, here is a {stone} that can regress pokemons, but maybe just one is not enough', cid)
 			player:giveQuestPrize(storage)
 			npcHandler:releaseFocus(cid)
 		else
-			selfSay('Verdade, jovem. Talvez um hieroglifo antigo tenha a resposta pelo que passei boa parte da minha vida procurando. Se conseguir um, por favor, me entregue e te recompensarei com parte do meu conhecimento!', cid)
+			selfSay('True, young man. Perhaps an ancient hieroglyphic holds the answer to what I have spent most of my life searching for. If you get one, please give it to me and I will reward you with some of my knowledge!', cid)
 			npcHandler:releaseFocus(cid)
 		end	
 	end

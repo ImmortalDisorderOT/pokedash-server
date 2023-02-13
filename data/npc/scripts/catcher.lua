@@ -13,7 +13,7 @@ function onCreatureDisappear(cid)           npcHandler:onCreatureDisappear(cid) 
 function onCreatureSay(cid, type, msg)      npcHandler:onCreatureSay(cid, type, msg)    end
 function onThink()                          npcHandler:onThink()                        end
 
-local voices = { {text = 'Estou sempre em busca do melhor catcher.'} }
+local voices = { {text = 'I am always in search of the best catcher.'} }
 npcHandler:addModule(VoiceModule:new(voices))
 
 local function creatureSayCallback(cid, type, msg)
@@ -30,20 +30,20 @@ local function creatureSayCallback(cid, type, msg)
 		local questStorage = player:getStorageValue(storageCatchQuest)
 		if questStorage < 1 then
 			if player:getStorageValue(baseStorageCatches + 19) < 2 then
-				npcHandler:say("Sua primeira missao e capturar {2 rattatas}. Depois disso retorne aqui que te darei um premio.", cid)
+				npcHandler:say("Your first mission is to capture {2 rattatas}. After that come back here and I will give you a reward.", cid)
 				npcHandler:releaseFocus(cid)
 			else
-				npcHandler:say("Bom trabalho! Pegue isso como uma recompensa. Tenho outra {quest} para voce.", cid)
+				npcHandler:say("Good job! Take this as a reward. I have another {quest} for you.", cid)
 				player:addItem(2152, math.random(1, 10))
 				player:addItem(26659, 80)
 				player:setStorageValue(storageCatchQuest, 1)
 			end
 		elseif questStorage == 1 then
 			if player:getStorageValue(baseStorageCatches + 69) < 2 then
-				npcHandler:say("Sua proxima missao e capturar {2 bellsprouts}. Depois disso retorne aqui que te darei um premio.", cid)
+				npcHandler:say("Your next mission is to capture {2 bellsprouts}. After that come back here and I will give you a reward.", cid)
 				npcHandler:releaseFocus(cid)
 			else
-				npcHandler:say("Bom trabalho! Pegue isso como uma recompensa. Tenho outra {quest} para voce.", cid)
+				npcHandler:say("Good job! Take this as a reward. I have another {quest} for you.", cid)
 				player:addItem(2152, math.random(1, 15))
 				player:addItem(26688, 30)
 				player:addItem(27634, 1)
@@ -53,7 +53,7 @@ local function creatureSayCallback(cid, type, msg)
 			local timeSinceLast = os.time() - player:getStorageValue(storageCatchQuestTime)
 			local timeRemaining = timeBetweenQuests - timeSinceLast
 			if (timeSinceLast > timeBetweenQuests) then
-				npcHandler:say("Posso te passar uma missao {facil}, {media} ou {dificil}, mas lembre-se que missoes dificeis geralmente trazem melhores recompensas. Qual prefere?", cid)
+				npcHandler:say("I can give you an {easy}, {medium} or {hard} quest, the harder the quest, the bigger the reward! Which one do you prefer?", cid)
 				npcHandler.topic[cid] = 1
 			elseif player:getStorageValue(storageCatchQuestDay) == 0 then
 				local pokeNumber = player:getStorageValue(storageCatchQuestPoke)
@@ -63,7 +63,7 @@ local function creatureSayCallback(cid, type, msg)
 				local currentCatch = player:getStorageValue(baseStorageCatches + pokeNumber)
 				local catches = currentCatch - startCatch
 				if catches < number then
-					npcHandler:say("Volte depois de capturar {" .. number .." " .. pokeName .. "} ou daqui " .. timeRemaining .. " segundos.", cid)
+					npcHandler:say("Come back after capturing {" .. number .." " .. pokeName .. "} or from here " .. timeRemaining .. " seconds.", cid)
 					npcHandler:releaseFocus(cid)
 				else
 					local tokens = 1
@@ -75,12 +75,12 @@ local function creatureSayCallback(cid, type, msg)
 						tokens = math.random(7,8)
 					end
 					player:addTokens(tokens)
-					npcHandler:say("Bom trabalho! Pegue " .. tokens .. " tokens como recompensa. Novo saldo: " .. player:getTokens() .. ".", cid)
+					npcHandler:say("Good job! Take " .. tokens .. " tokens as rewards. New Balance: " .. player:getTokens() .. ".", cid)
 					player:setStorageValue(storageCatchQuestDay, -1)
 					npcHandler:releaseFocus(cid)
 				end
 			else
-				npcHandler:say("Ja pegou seu premio de hoje. Retorne daqui " .. timeRemaining .. " segundos." , cid)
+				npcHandler:say("You already got today's prize. Come back in " .. timeRemaining .. " seconds." , cid)
 				npcHandler:releaseFocus(cid)
 			end
 		end
@@ -105,7 +105,7 @@ local function creatureSayCallback(cid, type, msg)
 		local monsterType = MonsterType(pokeName)
 		if not monsterType then
 			print("WARNING! Poke " .. pokeName .. " not found on NPC catcher.")
-			npcHandler:say("Encontramos um problema que ja foi reportado para os GMs.", cid)
+			npcHandler:say("We found a problem, please report to a GM.", cid)
 			npcHandler:releaseFocus(cid)
 			return true
 		end
@@ -114,14 +114,14 @@ local function creatureSayCallback(cid, type, msg)
 		player:setStorageValue(storageCatchQuestNumber, number)
 		player:setStorageValue(storageCatchQuestPoke, pokeNumber)
 		player:setStorageValue(storageCatchQuestStartCatch, startCatch)
-		npcHandler:say("Sei que voce e bom. Vamos ver se hoje voce consegue capturar {" .. number .." " .. pokeName .. "}.", cid)
+		npcHandler:say("I know you are good. Let's see if you can capture today {" .. number .." " .. pokeName .. "}.", cid)
 		npcHandler:releaseFocus(cid)
 	else
 		if npcHandler.topic[cid] == 0 then
-			npcHandler:say("Nao entendi. Gostaria de me {ajudar} com uma {task}?", cid)
+			npcHandler:say("I don't understand. Would you like to help me with a {task}?", cid)
 			return tue
 		elseif npcHandler.topic[cid] == 1 then
-			npcHandler:say("Nao entendi. Gostaria de uma task {facil}, {media} ou {dificil}?", cid)
+			npcHandler:say("I don't understand. Would you like an {easy}, {medium} or {hard} task?", cid)
 			return tue
 		end
 	end

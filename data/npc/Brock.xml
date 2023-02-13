@@ -3,7 +3,7 @@
 	<health now="100" max="100" />
 	<look type="2593" addons="0" />
 	<parameters>
-		<parameter key="message_greet" value="Ola |PLAYERNAME|. Eu sou o Brock! Eu sou Lider de Ginasio de Pewter! Eu acredito em defesas duras como pedra e determinacao! E por isso que meus Pokemons sao todos do tipo Pedra! Voce ainda quer me desafiar?" />
-		<parameter key="message_decline" value="Va embora, seu molenga!" />
+		<parameter key="message_greet" value="Hello |PLAYERNAME|, I'm Brock! I am the Pewter Gym Leader! I believe in rock hard defense and determination! That's why my Pokemons are all Stone-type! Do you still want to challenge me?" />
+		<parameter key="message_decline" value="Go away, you slacker!" />
 	</parameters>
 </npc>

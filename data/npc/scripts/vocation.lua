@@ -16,41 +16,41 @@ function creatureSayCallback(cid, type, msg)
 	end
 	
 	if msgcontains(msg, 'bye') or msgcontains(msg, 'no') or msgcontains(msg, 'nao') then
-		selfSay('Talvez uma outra hora.', cid)
+		selfSay('Maybe another time.', cid)
 		npcHandler:releaseFocus(cid)
 	elseif msgcontains(msg, 'sell') or msgcontains(msg, 'buy') or msgcontains(msg, 'comprar') or msgcontains(msg, 'vender') or msgcontains(msg, 'help') then
-		selfSay('Esta decidido sobre qual destino seguir? Posso te ajudar a tornar-se um {hunter}, {catcher}, {healer}, {blocker} ou {explorer}.', cid)
+		selfSay('Have you decided which job you\'d like to take? I can help you become a {hunter}, {catcher}, {healer}, {blocker} or {explorer}.', cid)
 	elseif msgcontains(msg, 'hunter') then
-		selfSay('Tem certeza que deseja tornar-se hunter? O preco desse curso e de ' .. priceTokens .. ' tokens!', cid)
+		selfSay('Are you sure you want to become a hunter? The price of this course is ' .. priceTokens .. ' tokens!', cid)
 		npcHandler.topic[cid] = 1
 	elseif msgcontains(msg, 'catcher') then
-		selfSay('Tem certeza que deseja tornar-se catcher? O preco desse curso e de ' .. priceTokens .. ' tokens!', cid)
+		selfSay('Are you sure you want to become a catcher? The price of this course is ' .. priceTokens .. ' tokens!', cid)
 		npcHandler.topic[cid] = 2
 	elseif msgcontains(msg, 'healer') then
-		selfSay('Tem certeza que deseja tornar-se healer? O preco desse curso e de ' .. priceTokens .. ' tokens!', cid)
+		selfSay('Are you sure you want to become a healer? The price of this course is ' .. priceTokens .. ' tokens!', cid)
 		npcHandler.topic[cid] = 3
 	elseif msgcontains(msg, 'blocker') then
-		selfSay('Tem certeza que deseja tornar-se blocker? O preco desse curso e de ' .. priceTokens .. ' tokens!', cid)
+		selfSay('Are you sure you want to become a blocker? The price of this course is ' .. priceTokens .. ' tokens!', cid)
 		npcHandler.topic[cid] = 4
 	elseif msgcontains(msg, 'explorer') then
-		selfSay('Tem certeza que deseja tornar-se explorer? O preco desse curso e de ' .. priceTokens .. ' tokens!', cid)
+		selfSay('Are you sure you want to become an explorer? The price of this course is ' .. priceTokens .. ' tokens!', cid)
 		npcHandler.topic[cid] = 5
 	elseif (msgcontains(msg, 'sim') or msgcontains(msg, 'yes')) and npcHandler.topic[cid] == 1 then
 		local player = Player(cid)
 		if player:getLevel() >= levelMinimum then		
 		if player:removeTokens(priceTokens) then
-			selfSay('Parabens! Faca bom proveito de sua nova profissao.', cid)
+			selfSay('Congratulations! Enjoy your new profession.', cid)
 			player:setVocation("Hunter")
 			npcHandler.topic[cid] = 0
 			npcHandler:releaseFocus(cid)
 		else
-			selfSay('Voce nao tem como me pagar!', cid)
+			selfSay('You can\'t afford it!', cid)
 			npcHandler.topic[cid] = 0
 			npcHandler:releaseFocus(cid)
 		end
 
 		else
-			selfSay('Desculpe, voce precisa ter ao menos level ' .. levelMinimum .. ".", cid)
+			selfSay('Sorry, you need to have at least level ' .. levelMinimum .. ".", cid)
 			npcHandler.topic[cid] = 0
 			npcHandler:releaseFocus(cid)
 		end
@@ -58,17 +58,17 @@ function creatureSayCallback(cid, type, msg)
 		local player = Player(cid)
 		if player:getLevel() >= levelMinimum then		
 			if player:removeTokens(priceTokens) then
-				selfSay('Parabens! Faca bom proveito de sua nova profissao.', cid)
+				selfSay('Congratulations! Enjoy your new profession.', cid)
 				player:setVocation("Catcher")
 				npcHandler.topic[cid] = 0
 				npcHandler:releaseFocus(cid)
 			else
-				selfSay('Voce nao tem como me pagar!', cid)
+				selfSay('You can\'t afford it!', cid)
 				npcHandler.topic[cid] = 0
 				npcHandler:releaseFocus(cid)
 			end
 		else
-			selfSay('Desculpe, voce precisa ter ao menos level ' .. levelMinimum .. ".", cid)
+			selfSay('Sorry, you need to have at least level ' .. levelMinimum .. ".", cid)
 			npcHandler.topic[cid] = 0
 			npcHandler:releaseFocus(cid)
 		end
@@ -76,17 +76,17 @@ function creatureSayCallback(cid, type, msg)
 		local player = Player(cid)
 		if player:getLevel() >= levelMinimum then
 			if player:removeTokens(priceTokens) then
-				selfSay('Parabens! Faca bom proveito de sua nova profissao.', cid)
+				selfSay('Congratulations! Enjoy your new profession.', cid)
 				player:setVocation("Healer")
 				npcHandler.topic[cid] = 0
 				npcHandler:releaseFocus(cid)
 			else
-				selfSay('Voce nao tem como me pagar!', cid)
+				selfSay('You can\'t afford it!', cid)
 				npcHandler.topic[cid] = 0
 				npcHandler:releaseFocus(cid)
 			end
 		else
-			selfSay('Desculpe, voce precisa ter ao menos level ' .. levelMinimum .. ".", cid)
+			selfSay('Sorry, you need to have at least level ' .. levelMinimum .. ".", cid)
 			npcHandler.topic[cid] = 0
 			npcHandler:releaseFocus(cid)
 		end
@@ -94,17 +94,17 @@ function creatureSayCallback(cid, type, msg)
 		local player = Player(cid)
 		if player:getLevel() >= levelMinimum then		
 			if player:removeTokens(priceTokens) then
-				selfSay('Parabens! Faca bom proveito de sua nova profissao.', cid)
+				selfSay('Congratulations! Enjoy your new profession.', cid)
 				player:setVocation("Blocker")
 				npcHandler.topic[cid] = 0
 				npcHandler:releaseFocus(cid)
 			else
-				selfSay('Voce nao tem como me pagar!', cid)
+				selfSay('You can\'t afford it!', cid)
 				npcHandler.topic[cid] = 0
 				npcHandler:releaseFocus(cid)
 			end
 		else
-			selfSay('Desculpe, voce precisa ter ao menos level ' .. levelMinimum .. ".", cid)
+			selfSay('Sorry, you need to have at least level ' .. levelMinimum .. ".", cid)
 			npcHandler.topic[cid] = 0
 			npcHandler:releaseFocus(cid)
 		end
@@ -112,17 +112,17 @@ function creatureSayCallback(cid, type, msg)
 		local player = Player(cid)
 		if player:getLevel() >= levelMinimum then		
 			if player:removeTokens(priceTokens) then
-				selfSay('Parabens! Faca bom proveito de sua nova profissao.', cid)
+				selfSay('Congratulations! Enjoy your new profession.', cid)
 				player:setVocation("Explorer")
 				npcHandler.topic[cid] = 0
 				npcHandler:releaseFocus(cid)
 			else
-				selfSay('Voce nao tem como me pagar!', cid)
+				selfSay('You can\'t afford it!', cid)
 				npcHandler.topic[cid] = 0
 				npcHandler:releaseFocus(cid)
 			end
 		else
-			selfSay('Desculpe, voce precisa ter ao menos level ' .. levelMinimum .. ".", cid)
+			selfSay('Sorry, you need to have at least level ' .. levelMinimum .. ".", cid)
 			npcHandler.topic[cid] = 0
 			npcHandler:releaseFocus(cid)
 		end

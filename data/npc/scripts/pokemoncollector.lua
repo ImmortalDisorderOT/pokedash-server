@@ -51,7 +51,7 @@ monsterType:getMoveMagicAttackBase() + monsterType:getMoveMagicDefenseBase())* p
 						price = 5 * math.floor(rawPrice/1.5) + boost * 1000
 					end
 					if ball:remove() then
-						selfSay('Take ' .. price .. ' by your ' .. name .. ' level ' .. level .. ' boost ' .. boost .. '. Thanks!', cid)
+						selfSay('Take ' .. price .. 'gp for your ' .. name .. ', at level ' .. level .. ' boost ' .. boost .. '. Thanks!', cid)
 						player:addMoney(price)
 						player:refreshPokemonBar({}, {})
 					end

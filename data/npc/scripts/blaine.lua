@@ -64,18 +64,18 @@ local function creatureSayCallback(cid, type, msg)
 		return false
 	end	
 	if msgcontains(msg, 'bye') or msgcontains(msg, 'no') or msgcontains(msg, 'nao') then
-		selfSay('Volte quando estiver pronto!', cid)
+		selfSay('Come back when you\'re ready!', cid)
 		npcHandler:releaseFocus(cid)
 	elseif msgcontains(msg, 'yes') or msgcontains(msg, 'sim') then
 		local player = Player(cid)
 		if player then
 			if player:getStorageValue(storage) <= 0 then
-				selfSay('Vamos esquentar essa batalha!', cid)
+				selfSay('Let\'s heat up this battle!', cid)
 				npcHandler.topic[cid] = 1
 				npcHandler:setMaxIdleTime(600)
 				player:setDuelWithNpc()
 			else
-				selfSay('Voce ja me derrotou!', cid)
+				selfSay('You have already defeated me!', cid)
 				npcHandler:releaseFocus(cid)
 			end
 		end
@@ -107,7 +107,7 @@ local function creatureOnDisapearCallback(cid)
 		if getDistanceTo(cid) >= 0 and getDistanceTo(cid) <= 8 then
 			return false
 		end
-		selfSay("Mais sorte na proxima tentativa, " .. player:getName() .. "!", cid)
+		selfSay("More luck on your next attempt, " .. player:getName() .. "!", cid)
 		npcHandler:releaseFocus(cid)
 	end
 	return true
@@ -126,7 +126,7 @@ local function creatureOnThinkCallback()
 				local monster = npc:getSummons()[1]
 				if not monster then
 					if pokemons[duelStatus] then
-						selfSay(pokemons[duelStatus].name .. ", eu escolho voce!")
+						selfSay(pokemons[duelStatus].name .. ", I choose you!")
 						npcPosition:getNextPosition(npc:getDirection())
 						monster = Game.createMonster(pokemons[duelStatus].name, npcPosition, false, true, pokemons[duelStatus].level, 0)
 						npcPosition:sendMagicEffect(balls.pokeball.effectRelease)
@@ -137,7 +137,7 @@ local function creatureOnThinkCallback()
 						monster:changeSpeed(-monster:getSpeed() + monster:getTotalSpeed())
 						player:increaseDuelWithNpcStatus()
 					else
-						selfSay('Isso foi incrivel, ' .. player:getName() .. "! Seus pokemons transformaram os meus em cinzas. Leve com voce a Insignia do Vulcao!", cid)
+						selfSay('That was incredible, ' .. player:getName() .. "! Your pokemons have turned mine into ashes. Take the Volcano Badge with you!", cid)
 						player:giveQuestPrize(storage)
 						npcHandler:releaseFocus(cid)
 					end
@@ -154,7 +154,7 @@ local function creatureOnThinkCallback()
 					end
 				end
 				if pokemonsAlive == 0 then
-					selfSay("Mais sorte na proxima tentativa, " .. player:getName() .. "!", cid)
+					selfSay("Better luck on your next attempt, " .. player:getName() .. "!", cid)
 					npcHandler:releaseFocus(cid)				
 				end
 			end

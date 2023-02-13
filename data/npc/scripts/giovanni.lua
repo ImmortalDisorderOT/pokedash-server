@@ -53,7 +53,7 @@ local function creatureGreetCallback(cid, message)
 		return true
 	end
 	if npcHandler:hasFocus() then
-		selfSay("Espere sua vez, " .. Player(cid):getName() .. "!")
+		selfSay("Wait your turn, " .. Player(cid):getName() .. "!")
 		return false
 	end
 	return true
@@ -64,18 +64,18 @@ local function creatureSayCallback(cid, type, msg)
 		return false
 	end	
 	if msgcontains(msg, 'bye') or msgcontains(msg, 'no') or msgcontains(msg, 'nao') then
-		selfSay('Desapareca da minha vista, ser insignificante!', cid)
+		selfSay('Get out of my sight, you insignificant being!', cid)
 		npcHandler:releaseFocus(cid)
 	elseif msgcontains(msg, 'yes') or msgcontains(msg, 'sim') then
 		local player = Player(cid)
 		if player then
 			if player:getStorageValue(storage) <= 0 then
-				selfSay('Que assim seja! Desta vez, nao estou me segurando!', cid)
+				selfSay('So be it! This time, I\'m not holding back!', cid)
 				npcHandler.topic[cid] = 1
 				npcHandler:setMaxIdleTime(600)
 				player:setDuelWithNpc()
 			else
-				selfSay('Humpf!!! Voce ja me derrotou... Agora desapareca!', cid)
+				selfSay('Humpf! You\'ve already defeated me... Now get lost!', cid)
 				npcHandler:releaseFocus(cid)
 			end
 		end
