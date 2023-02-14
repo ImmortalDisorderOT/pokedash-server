@@ -82,7 +82,7 @@ local function creatureSayCallback(cid, type, msg)
 			local catchRemain = player:getCatchRemain(catchRemainTable)
 			if catchRemain == 0 then
 				if player:getLevel() >= quests.cathemAll.level then
-					selfSay('Parabens, voce conseguiu capturar todos os pokemons. Tome este item antigo, espero que saiba o que fazer com ele.', cid)
+					selfSay('Congratulations, you have managed to capture all the pokemons. Take this old item, I hope you know what to do with it', cid)
 					player:giveQuestPrize(storageCathemAll, true)
 					player:setStorageValue(storageCathemAll, 2)
 					npcHandler:releaseFocus(cid)
