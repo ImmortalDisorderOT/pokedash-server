@@ -133,7 +133,7 @@ function onHealthChange(creature, attacker, primaryDamage, primaryType, secondar
 	localDamageMultiplier = localDamageMultiplier * (0.3 + math.random(1, 20) * 0.01)
 
 	if primaryDamage then primaryDamage = math.floor(primaryDamage * localDamageMultiplier) end
-	if secundaryDamage then secondaryDamage = math.floor(secondaryDamage * localDamageMultiplier) end
+	if secondaryDamage then secondaryDamage = math.floor(secondaryDamage * localDamageMultiplier) end
 
 	return primaryDamage, primaryType, secondaryDamage, secondaryType
 end

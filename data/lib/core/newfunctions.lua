@@ -20,7 +20,7 @@ damageMultiplierMoves = {areawaves = 2.75, singletargetweak = 2.0, singletarget 
 summonLevelDamageBuff = 0.008 -- buff due to summon's level
 playerLevelDamageBuff = 0.0005 -- buff due to player's level
 summonBoostDamageBuff = 0.008 -- buff due to summon's boost
-summonLoveDamageBuff = 0.0002 -- buff due to summon's love
+summonLoveDamageBuff = 0.0004 -- buff due to summon's love
 vitaminStatusBuff = 1.2
 hunterDamageBuff = 1.1
 blockerHealthBuff = 1.25
