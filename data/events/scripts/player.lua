@@ -310,7 +310,7 @@ local function useStamina(player)
 end
 
 function Player:onGainExperience(source, exp, rawExp)
-	local multiplier = 5 -- how many times more exp than players a monster will get
+	local multiplier = 10 -- how many times more exp than players a monster will get
 
 	if not source then
 		return exp
