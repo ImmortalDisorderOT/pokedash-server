@@ -1,4 +1,4 @@
-local delay = 10*60
+local delay = 1*60
 local availableCities = 59
 
 function onSay(player, words, param)
