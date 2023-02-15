@@ -44,7 +44,7 @@ local function creatureGreetCallback(cid, message)
 	if message == nil then
 		return true
 	end
-	selfSay("Espere sua vez!")
+	selfSay("Wait your turn!")
 	return false
 end
 
@@ -84,7 +84,7 @@ local function creatureOnThinkCallback()
 
 			if npcHandler.topic[cid] == 1 then
 				npcHandler.topic[cid] = 2
-				selfSay("Proximo player a tentar: " .. creature:getName() .. ". Desejem boa sorte a ele!")
+				selfSay("Next player to try: " .. creature:getName() .. ". Wish him good luck!")
 			end
 
 			if npcHandler.topic[cid] == 3 then
@@ -98,7 +98,7 @@ local function creatureOnThinkCallback()
 						for key, value in pairs(idDie) do
 							if value == dice:getId() then numberTook = key - 1 end
 						end					
-						selfSay("Player " .. creature:getName() .. " sorteou o numero " .. numberTook .. ".")
+						selfSay("Player " .. creature:getName() .. " drew the number " .. numberTook .. ".")
 						npcHandler.topic[cid] = 5
 					end
 				end
@@ -106,13 +106,13 @@ local function creatureOnThinkCallback()
 
 			if npcHandler.topic[cid] == 5 then			
 				if numberTook == number then
-					selfSay("Parabens, " .. creature:getName() .. "!" .. " Jogue o dado sobre uma bag para recolher seu premio!")
+					selfSay("Congratulations, " .. creature:getName() .. "!" .. " Roll the dice on a bag to collect your prize!")
 					npcHandler.topic[cid] = 6
 				else
-					selfSay("Nao foi dessa vez, " .. creature:getName() .. "!")
+					selfSay("Not this time, " .. creature:getName() .. "!")
 					dice:remove()
 					doTeleportPlayerTemple(cid)
-					local msg = "Player " .. creature:getName() .. " chutou o numero " .. number .. " e sorteou o numero " .. numberTook .. ". Nao foi dessa vez!"
+					local msg = "Player " .. creature:getName() .. " picked the number " .. number .. " and drew the number " .. numberTook .. ". Not this time!"
 					broadcastMessage(msg, MESSAGE_STATUS_WARNING)
 				end
 			end
@@ -133,7 +133,7 @@ local function creatureOnThinkCallback()
 						end
 					end
 					if found then
-						local msg = "Player " .. creature:getName() .. " chutou o numero " .. number .. " e ganhou: " 
+						local msg = "Player " .. creature:getName() .. " picked the number  " .. number .. " and won: " 
 						doTeleportPlayerTemple(cid)
 						local container = Container(creature:addItem(idBag, 1).uid)
 						for i = 1, prizesNumber do
@@ -142,13 +142,13 @@ local function creatureOnThinkCallback()
 							if i < prizesNumber then
 								msg = msg .. prizes[random].count .. " " .. prizes[random].name .. ", "
 							else
-								msg = msg .. prizes[random].count .. " " .. prizes[random].name .. ". Parabens!"
+								msg = msg .. prizes[random].count .. " " .. prizes[random].name .. ". Congratulations!"
 							end
 						end
 						broadcastMessage(msg, MESSAGE_STATUS_WARNING)
 					else
-						selfSay("Voce jogou o dado no lugar errado, " .. creature:getName() .. "! Recusou seu premio...")
-						print("WARNING! Player " .. creature:getName() .. " jogou o dado no lugar errado.")
+						selfSay("You threw the dice in the wrong place, " .. creature:getName() .. "! Lost his prize...")
+						print("WARNING! Player " .. creature:getName() .. " He threw the dice in the wrong place.")
 						for x = playerPosition.x - 7, playerPosition.x + 7 do
 							for y = playerPosition.y - 7, playerPosition.y + 7 do
 								local throwTile = Tile(Position(x, y, npcPosition.z))
@@ -156,7 +156,7 @@ local function creatureOnThinkCallback()
 									local throwItem = throwTile:getTopDownItem()
 									if throwItem and isInArray(idDie, throwItem:getId()) then
 										throwItem:remove()
-										print("WARNING! Dado perdido deletado.")
+										print("WARNING!  Lost data deleted.")
 									end
 								end
 							end
@@ -169,7 +169,7 @@ local function creatureOnThinkCallback()
 			end
 
 			if os.time() > creature:getStorageValue(storageDelayBag) then
-				selfSay("Seu tempo se esgotou, " .. creature:getName() .. "!")
+				selfSay("Your time has run out, " .. creature:getName() .. "!")
 				if dice then
 					dice:remove()
 				end
@@ -193,7 +193,7 @@ local function creatureSayCallback(cid, type, msg)
 		if not number then return true end
 		if number > 6 then number = nil end
 		if number ~= nil then
-			selfSay("Player " .. player:getName() .. " escolheu o numero " .. number .. ". Agora gire o dado!")
+			selfSay("Player " .. player:getName() .. " chose the number " .. number .. ". Now roll the die!")
 			npcHandler.topic[cid] = 3
 		end
 	end
