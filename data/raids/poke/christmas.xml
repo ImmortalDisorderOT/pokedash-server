@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <raid>
-	<announce delay="1000" type="event" message="O papai noel de Snow esta passando por uma mutacao estranha." />
-	<announce delay="110000" type="event" message="O papai noel mutante esta assombrando o CP de Snow, ajude a derrota-lo!" />
+	<announce delay="1000" type="event" message="Snow's Santa Claus is undergoing a strange mutation." />
+	<announce delay="110000" type="event" message="The mutant Santa Claus is haunting Snow's PokeCenter, help him defeat it!" />
 	<areaspawn delay="118000" fromx="1441" fromy="1602" fromz="6" tox="1444" toy="1605" toz="6">
 		<monster name="Mutated Santa" amount="1" />
 	</areaspawn>

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <raid>
-	<announce delay="1000" type="event" message="A populacao de ratos de Saffron esta acima do normal." />
-	<announce delay="60000" type="event" message="Infestacao de ratos em Saffron. Ajude a limpar a cidade!" />
-	<announce delay="110000" type="event" message="Shinys avistados em frente ao CP de Saffron!" />
+	<announce delay="1000" type="event" message="Saffron's rat population is above normal." />
+	<announce delay="60000" type="event" message="Rat infestation in Saffron. Help clean up the city!" />
+	<announce delay="110000" type="event" message="Shinys spotted in front of the Saffron PokeCenter!" />
 	<areaspawn delay="68000" fromx="1017" fromy="1081" fromz="7" tox="1100" toy="1021" toz="7">
 		<monster name="Rattata" amount="150" />
 		<monster name="Raticate" amount="20" />

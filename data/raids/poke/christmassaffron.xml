@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <raid>
-	<announce delay="1000" type="event" message="Pokemons de Natal estao a caminho de Saffron." />
-	<announce delay="60000" type="event" message="Invasao Natalina em Saffron!" />
+	<announce delay="1000" type="event" message="Christmas Pokemons are on their way to Saffron." />
+	<announce delay="60000" type="event" message="Christmas Invasion in Saffron!" />
 	<areaspawn delay="68000" fromx="1025" fromy="1036" fromz="7" tox="1079" toy="1078" toz="7">
 		<monster name="Santa Snorlax" amount="1" />
 		<monster name="Xmas Diglett" amount="3" />

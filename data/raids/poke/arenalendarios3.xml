@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <raid>
-	<announce delay="10" type="event" message="Wave Gold Arena chegando!" />
+	<announce delay="10" type="event" message="Wave Gold Arena coming!" />
 	<areaspawn delay="2000" fromx="646" fromy="1198" fromz="6" tox="670" toy="1208" toz="6">
 		<monster name="Shiny Articuno" amount="1" />
 		<monster name="Shiny Moltres" amount="1" />

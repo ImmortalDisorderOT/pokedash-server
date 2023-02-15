@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <raid>
-	<announce delay="1000" type="event" message="Raikou avistado nas proximidades de Snow, tome cuidado!" />
-	<announce delay="60000" type="event" message="Raikou proximo ao CP de Snow! Ajude a derrota-lo!" />
+	<announce delay="1000" type="event" message="Raikou spotted in Snow's vicinity, be careful!" />
+	<announce delay="60000" type="event" message="Raikou near Snow's PokeCenter! Help us to defeat him!" />
 	<areaspawn delay="68000" fromx="1427" fromy="1594" fromz="6" tox="1434" toy="1592" toz="6">
 		<monster name="Raikou" amount="1" />
 	</areaspawn>

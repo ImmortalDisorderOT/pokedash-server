@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <raid>
-	<announce delay="1000" type="event" message="Zumbis avistados a caminho de Lavender, ajude a proteger a cidade!" />
-	<announce delay="60000" type="event" message="Zumbis invadiram Lavender, os moradores precisam de sua ajuda!" />
-	<announce delay="110000" type="event" message="Uma abobora ganhou vida em frente ao CP de Lavender!" />
+	<announce delay="1000" type="event" message="Zombies spotted on their way to Lavender, help protect the town!" />
+	<announce delay="60000" type="event" message="Zombies have invaded Lavender, the residents need your help!" />
+	<announce delay="110000" type="event" message="A pumpkin came to life in front of the Lavender PokeCenter!" />
 	<areaspawn delay="68000" fromx="1192" fromy="1048" fromz="7" tox="1230" toy="1063" toz="7">
 		<monster name="Zombie" amount="70" />
 	</areaspawn>
