@@ -15,9 +15,10 @@ local function cleanArena()
 end
 
 local function bagEventStop()
-	print("WARNING! Encerrando evento bag premiada.")
+	print("WARNING! Closing bag event awarded.")
 	cleanArena()
-	Game.startRaid("Christmas Saffron")
+	local raids = {"Christmas Saffron", "Halloween Saffron"}
+	Game.startRaid(raids[math.random(1, #raids)])
 end
 
 local function bagEventTryStop()
@@ -36,7 +37,7 @@ local function bagEventTryStop()
 			playersRemaining = playersRemaining + tile:getCreatureCount()
 		end
 	end
-	print("WARNING! Players ainda na arena do evento bag premiada: " .. playersRemaining)
+	print("WARNING! Players still in the awarded bag event arena: " .. playersRemaining)
 	if playersRemaining == 0 then
 		bagEventStop()
 	else
@@ -45,7 +46,7 @@ local function bagEventTryStop()
 end
 
 local function bagEventStart()
-	broadcastMessage("Inscricoes para o envento bag premiada encerradas! Players sendo transportados para o evento.", MESSAGE_STATUS_WARNING)
+	broadcastMessage("Registration for bag event closed! Players being transported to the event.", MESSAGE_STATUS_WARNING)
 	local players = Game.getPlayers()
 	for i = 1, #players do
 		local player = players[i]
@@ -63,37 +64,40 @@ local function bagEventStart()
 end
 
 local function fifthBagEventWarning()
-	broadcastMessage("Evento bag premiada vai ser iniciado daqui 1 minuto. Para se inscrever, voce deve ter level 5 e deve dizer hi e depois bag ao NPC Manager que se encontra no CP de Saffron. As inscricoes serao encerradas daqui 1 minuto.", MESSAGE_STATUS_WARNING)
+	broadcastMessage("Prize bag event will start in 1 minute. To sign up, you must be level 5 and you must say hi and then bag to the NPC Manager at the Saffron CP. Registration will be closed in 1 minute.", MESSAGE_STATUS_WARNING)
 	addEvent(bagEventStart, 1 * 60 * 1000)
 end
 
 local function fourthBagEventWarning()
-	broadcastMessage("Evento bag premiada vai ser iniciado daqui 2 minutos. Para se inscrever, voce deve ter level 5 e deve dizer hi e depois bag ao NPC Manager que se encontra no CP de Saffron.", MESSAGE_STATUS_WARNING)
+	broadcastMessage("Prize bag event will start in 2 minutes. To sign up, you must be level 5 and you must say hi and then bag to the NPC Manager in the Saffron CP.", MESSAGE_STATUS_WARNING)
 	addEvent(fifthBagEventWarning, 1 * 60 * 1000)
 end
 
 local function thirdBagEventWarning()
-	broadcastMessage("Evento bag premiada vai ser iniciado daqui 4 minutos. Para se inscrever, voce deve ter level 5 e deve dizer hi e depois bag ao NPC Manager que se encontra no CP de Saffron.", MESSAGE_STATUS_WARNING)
+	broadcastMessage("Prize bag event will start in 4 minutes. To sign up, you must be level 5 and you must say hi and then bag to the NPC Manager in the Saffron CP.", MESSAGE_STATUS_WARNING)
 	addEvent(fourthBagEventWarning, 2 * 60 * 1000)
 end
 
 local function secondBagEventWarning()
-	broadcastMessage("Evento bag premiada vai ser iniciado daqui 6 minutos. Para se inscrever, voce deve ter level 5 e deve dizer hi e depois bag ao NPC Manager que se encontra no CP de Saffron.", MESSAGE_STATUS_WARNING)
+	broadcastMessage("Prize bag event will start in 6 minutes. To sign up, you must be level 5 and you must say hi and then bag to the NPC Manager in the Saffron CP.", MESSAGE_STATUS_WARNING)
 	addEvent(thirdBagEventWarning, 2 * 60 * 1000)
 end
 
 local function firstBagEventWarning()
-	broadcastMessage("Evento bag premiada vai ser iniciado daqui 8 minutos. Para se inscrever, voce deve ter level 5 e deve dizer hi e depois bag ao NPC Manager que se encontra no CP de Saffron.", MESSAGE_STATUS_WARNING)
+	broadcastMessage("Prize bag event will start in 8 minutes. To sign up, you must be level 5 and you must say hi and then bag to the NPC Manager in the Saffron CP.", MESSAGE_STATUS_WARNING)
 	addEvent(secondBagEventWarning, 2 * 60 * 1000)
 end
 
 function onTime(interval)
-	local day = os.date("%A")
-	if day ~= "Sunday" then
+	local hour = os.date("%H")
+	if hour % 2 == 1 then
+		return true
+	end
+	if Game.getPlayerCount() < 2 then
 		return true
 	end
 	ipsSub = {}
-	broadcastMessage("Evento bag premiada vai ser iniciado daqui 10 minutos. Para se inscrever, voce deve ter level 5 e deve dizer hi e depois bag ao NPC Manager que se encontra no CP de Saffron.", MESSAGE_STATUS_WARNING)
+	broadcastMessage("Prize bag event will start in 10 minutes. To sign up, you must be level 5 and you must say hi and then bag to the NPC Manager in the Saffron CP.", MESSAGE_STATUS_WARNING)
 	bagEventIsOpen = true
 	addEvent(firstBagEventWarning, 2 * 60 * 1000)
 	return true

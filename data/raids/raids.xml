@@ -13,7 +13,9 @@
 
 	<raid name="Christmas Saffron" file="poke/christmassaffron.xml" interval2="9000" margin="9900" />
 	<raid name="Shiny Saffron" file="poke/shinysaffron.xml" interval2="9000" margin="9900" />
-
+	<raid name="Halloween" file="poke/halloween.xml" interval2="9000" margin="9900" />
+	<raid name="Halloween Saffron" file="poke/halloweensaffron.xml" interval2="9000" margin="9900" />
+	
 	<raid name="Rattata" file="poke/rattata.xml" interval2="500" margin="180" />
 	<raid name="Aquatica" file="poke/aquatica.xml" interval2="600" margin="180" />
 	<raid name="Raikou" file="poke/raikou.xml" interval2="1500" margin="180" />

@@ -21,19 +21,20 @@ local function cleanArena()
 end
 
 local function arenaEventStop()
-	print("WARNING! Encerrando evento gold arena.")
+	print("WARNING! Closing gold arena event.")
 	isArenaEventRunning = false
 	local winner = Player(arenaLastPlayerId)
 	if winner then
-		broadcastMessage("Evento gold arena finalizado! O vencedor foi: " .. winner:getName() .. ". Parabens!", MESSAGE_STATUS_WARNING)
+		broadcastMessage("Gold Arena Event Finished! The winner was: " .. winner:getName() .. ". Congratulations!", MESSAGE_STATUS_WARNING)
 		for _,value in pairs(prizes) do
 			winner:addItem(value.item, value.count)
 		end
 	else
-		print("WARNING! gold arena sem vencedor!")
+		print("WARNING! gold arena without a winner!")
 	end
 	cleanArena()
-	Game.startRaid("Christmas Saffron")
+	local raids = {"Christmas Saffron", "Halloween Saffron"}
+	Game.startRaid(raids[math.random(1, #raids)])
 	return true
 end
 
@@ -51,7 +52,7 @@ function arenaEventTryStop()
 			end
 		end
 	end
-	print("WARNING! Players ainda na arena do evento gold arena: " .. playersRemaining)
+	print("WARNING! Players still in the gold event arena: " .. playersRemaining)
 	if playersRemaining == 0 then
 		arenaEventStop()
 	end
@@ -88,7 +89,7 @@ local function tryStartRaid(actualRaid)
 end
 
 local function arenaEventStart()
-	broadcastMessage("Inscricoes para o envento gold arena encerradas! Players sendo transportados para o evento.", MESSAGE_STATUS_WARNING)
+	broadcastMessage("Registration for the gold arena event is now closed! Players being transported to the event.", MESSAGE_STATUS_WARNING)
 	local players = Game.getPlayers()
 	for i = 1, #players do
 		local player = players[i]
@@ -106,39 +107,42 @@ local function arenaEventStart()
 end
 
 local function fifthArenaEventWarning()
-	broadcastMessage("Evento gold arena vai ser iniciado daqui 1 minuto. Para se inscrever, voce deve ter level 5 e deve dizer hi e depois arena ao NPC Manager que se encontra em frente ao CP de Saffron. As inscricoes serao encerradas daqui 1 minuto.", MESSAGE_STATUS_WARNING)
+	broadcastMessage("Gold arena event will start in 1 minute. To sign up, you must be level 5 and you must say hi and then arena to the NPC Manager in front of the Saffron CP. Registration will be closed in 1 minute.", MESSAGE_STATUS_WARNING)
 	addEvent(arenaEventStart, 1 * 60 * 1000)
 end
 
 local function fourthArenaEventWarning()
-	broadcastMessage("Evento gold arena vai ser iniciado daqui 2 minutos. Para se inscrever, voce deve ter level 5 e deve dizer hi e depois arena ao NPC Manager que se encontra em frente ao CP de Saffron.", MESSAGE_STATUS_WARNING)
+	broadcastMessage("Gold arena event will start in 2 minutes. To sign up, you must be level 5 and you must say hi and then arena to the NPC Manager that is located in front of Saffron's CP.", MESSAGE_STATUS_WARNING)
 	addEvent(fifthArenaEventWarning, 1 * 60 * 1000)
 end
 
 local function thirdArenaEventWarning()
-	broadcastMessage("Evento gold arena vai ser iniciado daqui 4 minutos. Para se inscrever, voce deve ter level 5 e deve dizer hi e depois arena ao NPC Manager que se encontra em frente ao CP de Saffron.", MESSAGE_STATUS_WARNING)
+	broadcastMessage("Gold arena event will start in 4 minutes. To sign up, you must be level 5 and you must say hi and then arena to the NPC Manager that is located in front of Saffron's CP.", MESSAGE_STATUS_WARNING)
 	addEvent(fourthArenaEventWarning, 2 * 60 * 1000)
 end
 
 local function secondArenaEventWarning()
-	broadcastMessage("Evento gold arena vai ser iniciado daqui 6 minutos. Para se inscrever, voce deve ter level 5 e deve dizer hi e depois arena ao NPC Manager que se encontra em frente ao CP de Saffron.", MESSAGE_STATUS_WARNING)
+	broadcastMessage("Gold arena event will start in 6 minutes. To sign up, you must be level 5 and you must say hi and then arena to the NPC Manager that is located in front of Saffron's CP.", MESSAGE_STATUS_WARNING)
 	addEvent(thirdArenaEventWarning, 2 * 60 * 1000)
 end
 
 local function firstArenaEventWarning()
-	broadcastMessage("Evento gold arena vai ser iniciado daqui 8 minutos. Para se inscrever, voce deve ter level 5 e deve dizer hi e depois arena ao NPC Manager que se encontra em frente ao CP de Saffron.", MESSAGE_STATUS_WARNING)
+	broadcastMessage("Gold arena event will start in 8 minutes. To sign up, you must be level 5 and you must say hi and then arena to the NPC Manager that is located in front of Saffron's CP.", MESSAGE_STATUS_WARNING)
 	addEvent(secondArenaEventWarning, 2 * 60 * 1000)
 end
 
 function onTime(interval)
-	local day = os.date("%A")
-	if day ~= "Saturday" then
+	local hour = os.date("%H")
+	if hour % 2 == 0 then
+		return true
+	end
+	if Game.getPlayerCount() < 2 then
 		return true
 	end
 	ipsSub = {}
 	activeRaidsArena = {}
 	isArenaEventRunning = true
-	broadcastMessage("Evento gold arena vai ser iniciado daqui 10 minutos. Para se inscrever, voce deve ter level 5 e deve dizer hi e depois arena ao NPC Manager que se encontra em frente ao CP de Saffron.", MESSAGE_STATUS_WARNING)
+	broadcastMessage("Gold arena event will start in 10 minutes. To sign up, you must be level 5 and you must say hi and then arena to the NPC Manager that is located in front of Saffron's CP.", MESSAGE_STATUS_WARNING)
 	arenaEventIsOpen = true
 	addEvent(firstArenaEventWarning, 2 * 60 * 1000)
 	return true
