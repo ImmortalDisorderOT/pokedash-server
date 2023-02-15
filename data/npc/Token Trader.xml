@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Token Trader" script="tokentrader.lua" walkinterval="2000" floorchange="0">
+	<health now="100" max="100" />
+	<look type="132" head="59" body="111" legs="99" feet="115" addons="0" />
+	<parameters>
+		<parameter key="message_greet" value="Hi |PLAYERNAME| I sell tokens, I can offer you {token}s and {box}es!" />
+		<parameter key="message_decline" value="Maybe another time!" />
+	</parameters>
+</npc>

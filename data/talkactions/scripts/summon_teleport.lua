@@ -53,13 +53,6 @@ function onSay(player, words, param)
 		return false
 	end
 
-	if town:getId() > 49 then
-		if player:getStorageValue(quests.cathemAll.prizes[1].uid) < 2 then
-			player:sendCancelMessage("Sorry, not possible. You must finish catch'em all quest before teleport to this city.")
-			return false
-		end
-	end
-
 	if player:isOnDive() then
 		player:setStorageValue(storageDive, -1)
 		player:removeCondition(CONDITION_OUTFIT)

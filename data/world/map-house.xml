@@ -126,7 +126,7 @@
 	<house name="Eternia House #124" houseid="124" entryx="362" entryy="914" entryz="7" rent="25000" townid="18" size="25" />
 	<house name="Eternia House #125" houseid="125" entryx="370" entryy="914" entryz="7" rent="25000" townid="18" size="25" />
 	<house name="Eternia House #126" houseid="126" entryx="378" entryy="914" entryz="7" rent="30000" townid="18" size="30" />
-	<house name="Eternia Guildhall #2" houseid="127" entryx="364" entryy="930" entryz="7" rent="1182000" guildhall="true" townid="18" size="1182" />
+	<house name="Eternia Guildhall #2" houseid="127" entryx="364" entryy="930" entryz="7" rent="1182000" guildhall="true" townid="18" size="1183" />
 	<house name="Eternia Guildhall #1" houseid="128" entryx="382" entryy="896" entryz="7" rent="387000" guildhall="true" townid="18" size="387" />
 	<house name="Eternia House #129" houseid="129" entryx="391" entryy="916" entryz="7" rent="69000" townid="18" size="69" />
 	<house name="Eternia House #130" houseid="130" entryx="403" entryy="916" entryz="6" rent="18000" townid="18" size="18" />

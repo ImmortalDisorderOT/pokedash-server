@@ -3624,6 +3624,9 @@
 		<monster name="Lunatone" x="-1" y="-3" z="6" spawntime="60" />
 		<monster name="Solrock" x="-1" y="3" z="6" spawntime="60" />
 	</spawn>
+	<spawn centerx="1065" centery="1049" centerz="6" radius="1">
+		<npc name="Token Trader" x="-1" y="0" z="6" spawntime="60" />
+	</spawn>
 	<spawn centerx="1228" centery="1050" centerz="6" radius="1" />
 	<spawn centerx="1459" centery="1051" centerz="6" radius="5">
 		<monster name="Solrock" x="-3" y="0" z="6" spawntime="60" />
@@ -4869,6 +4872,9 @@
 		<monster name="Voltorb" x="0" y="2" z="6" spawntime="60" />
 		<monster name="Rotom" x="2" y="3" z="6" spawntime="60" />
 	</spawn>
+	<spawn centerx="310" centery="1315" centerz="6" radius="1">
+		<npc name="Token Trader" x="-1" y="0" z="6" spawntime="60" />
+	</spawn>
 	<spawn centerx="694" centery="1318" centerz="6" radius="30">
 		<monster name="Tentacool" x="-5" y="-7" z="6" spawntime="60" />
 		<monster name="Tentacool" x="17" y="-7" z="6" spawntime="60" />
@@ -4924,6 +4930,9 @@
 		<monster name="Blastoise" x="-6" y="-3" z="6" spawntime="60" />
 		<monster name="Wartortle" x="2" y="-2" z="6" spawntime="60" />
 		<monster name="Wartortle" x="-9" y="1" z="6" spawntime="60" />
+	</spawn>
+	<spawn centerx="1209" centery="1325" centerz="6" radius="1">
+		<npc name="Token Trader" x="0" y="0" z="6" spawntime="60" />
 	</spawn>
 	<spawn centerx="1229" centery="1327" centerz="6" radius="10">
 		<monster name="Pidgey" x="5" y="-3" z="6" spawntime="60" />
@@ -8505,6 +8514,9 @@
 		<monster name="Diglett" x="-1" y="0" z="7" spawntime="60" />
 		<monster name="Sandslash" x="1" y="1" z="7" spawntime="60" />
 	</spawn>
+	<spawn centerx="715" centery="851" centerz="7" radius="1">
+		<npc name="Token Trader" x="0" y="0" z="7" spawntime="60" />
+	</spawn>
 	<spawn centerx="751" centery="851" centerz="7" radius="5" />
 	<spawn centerx="1176" centery="851" centerz="7" radius="3">
 		<monster name="Diglett" x="0" y="-1" z="7" spawntime="60" />
@@ -9411,6 +9423,9 @@
 		<monster name="Kricketune" x="19" y="26" z="7" spawntime="180" />
 		<monster name="Mankey" x="28" y="29" z="7" spawntime="60" />
 	</spawn>
+	<spawn centerx="1056" centery="907" centerz="7" radius="1">
+		<npc name="Token Trader" x="0" y="0" z="7" spawntime="60" />
+	</spawn>
 	<spawn centerx="1066" centery="907" centerz="7" radius="1">
 		<npc name="Eva" x="-1" y="0" z="7" spawntime="60" />
 	</spawn>
@@ -10163,6 +10178,9 @@
 		<monster name="Treecko" x="1" y="2" z="7" spawntime="180" />
 		<monster name="Treecko" x="-1" y="3" z="7" spawntime="180" />
 	</spawn>
+	<spawn centerx="1497" centery="949" centerz="7" radius="1">
+		<npc name="Token Trader" x="-1" y="0" z="7" spawntime="60" />
+	</spawn>
 	<spawn centerx="3072" centery="949" centerz="7" radius="1">
 		<monster name="Aggron" x="0" y="0" z="7" spawntime="180" />
 		<monster name="Aggron" x="0" y="1" z="7" spawntime="180" />
@@ -10238,6 +10256,9 @@
 	</spawn>
 	<spawn centerx="3163" centery="955" centerz="7" radius="1">
 		<npc name="mark" x="0" y="0" z="7" spawntime="60" />
+	</spawn>
+	<spawn centerx="3173" centery="955" centerz="7" radius="1">
+		<npc name="Token Trader" x="-1" y="0" z="7" spawntime="60" />
 	</spawn>
 	<spawn centerx="740" centery="956" centerz="7" radius="5">
 		<monster name="Pinsir" x="0" y="-1" z="7" spawntime="60" />
@@ -10910,10 +10931,10 @@
 		<monster name="Vileplume" x="-2" y="0" z="7" spawntime="180" />
 	</spawn>
 	<spawn centerx="2452" centery="992" centerz="7" radius="1">
-		<monster name="Toxicroak" x="0" y="0" z="7" spawntime="60" />
+		<monster name="toxicroak" x="0" y="0" z="7" spawntime="60" />
 	</spawn>
 	<spawn centerx="2454" centery="992" centerz="7" radius="1">
-		<monster name="Toxicroak" x="0" y="0" z="7" spawntime="60" />
+		<monster name="toxicroak" x="0" y="0" z="7" spawntime="60" />
 	</spawn>
 	<spawn centerx="3042" centery="992" centerz="7" radius="1">
 		<monster name="Aggron" x="0" y="-1" z="7" spawntime="180" />
@@ -11587,6 +11608,9 @@
 		<monster name="Grovyle" x="2" y="3" z="7" spawntime="60" />
 		<monster name="Grovyle" x="-5" y="4" z="7" spawntime="60" />
 		<monster name="Grovyle" x="0" y="4" z="7" spawntime="180" />
+	</spawn>
+	<spawn centerx="2737" centery="1019" centerz="7" radius="1">
+		<npc name="Token Trader" x="0" y="0" z="7" spawntime="60" />
 	</spawn>
 	<spawn centerx="3015" centery="1019" centerz="7" radius="1" />
 	<spawn centerx="3149" centery="1019" centerz="7" radius="1">
@@ -12352,19 +12376,19 @@
 		<monster name="Nidoran Male" x="2" y="2" z="7" spawntime="60" />
 	</spawn>
 	<spawn centerx="2404" centery="1050" centerz="7" radius="30">
-		<monster name="Toxicroak" x="13" y="0" z="7" spawntime="60" />
+		<monster name="toxicroak" x="13" y="0" z="7" spawntime="60" />
 		<monster name="Croagunk" x="-29" y="2" z="7" spawntime="180" />
-		<monster name="Toxicroak" x="16" y="5" z="7" spawntime="180" />
-		<monster name="Toxicroak" x="18" y="8" z="7" spawntime="60" />
+		<monster name="toxicroak" x="16" y="5" z="7" spawntime="180" />
+		<monster name="toxicroak" x="18" y="8" z="7" spawntime="60" />
 		<monster name="Croagunk" x="14" y="15" z="7" spawntime="180" />
 		<monster name="Croagunk" x="14" y="16" z="7" spawntime="180" />
 		<monster name="Croagunk" x="3" y="17" z="7" spawntime="180" />
 		<monster name="Croagunk" x="3" y="18" z="7" spawntime="180" />
 		<monster name="Croagunk" x="2" y="19" z="7" spawntime="180" />
-		<monster name="Toxicroak" x="14" y="20" z="7" spawntime="180" />
+		<monster name="toxicroak" x="14" y="20" z="7" spawntime="180" />
 		<monster name="Croagunk" x="2" y="21" z="7" spawntime="180" />
 		<monster name="Croagunk" x="1" y="23" z="7" spawntime="180" />
-		<monster name="Toxicroak" x="12" y="25" z="7" spawntime="60" />
+		<monster name="toxicroak" x="12" y="25" z="7" spawntime="60" />
 		<monster name="Croagunk" x="4" y="28" z="7" spawntime="180" />
 	</spawn>
 	<spawn centerx="2417" centery="1050" centerz="7" radius="1" />
@@ -12473,13 +12497,13 @@
 		<monster name="Grovyle" x="-4" y="2" z="7" spawntime="180" />
 	</spawn>
 	<spawn centerx="2370" centery="1054" centerz="7" radius="30">
-		<monster name="Toxicroak" x="-1" y="-7" z="7" spawntime="60" />
-		<monster name="Toxicroak" x="-16" y="0" z="7" spawntime="180" />
+		<monster name="toxicroak" x="-1" y="-7" z="7" spawntime="60" />
+		<monster name="toxicroak" x="-16" y="0" z="7" spawntime="180" />
 		<monster name="Croagunk" x="-2" y="0" z="7" spawntime="180" />
 		<monster name="Croagunk" x="0" y="0" z="7" spawntime="180" />
-		<monster name="Toxicroak" x="-17" y="1" z="7" spawntime="180" />
+		<monster name="toxicroak" x="-17" y="1" z="7" spawntime="180" />
 		<monster name="Croagunk" x="-4" y="2" z="7" spawntime="60" />
-		<monster name="Toxicroak" x="-17" y="3" z="7" spawntime="180" />
+		<monster name="toxicroak" x="-17" y="3" z="7" spawntime="180" />
 		<monster name="Croagunk" x="0" y="5" z="7" spawntime="180" />
 		<monster name="Croagunk" x="-4" y="6" z="7" spawntime="180" />
 		<monster name="Croagunk" x="-7" y="8" z="7" spawntime="180" />
@@ -12489,7 +12513,7 @@
 		<monster name="Croagunk" x="2" y="10" z="7" spawntime="60" />
 		<monster name="Croagunk" x="-9" y="11" z="7" spawntime="180" />
 		<monster name="Croagunk" x="-10" y="12" z="7" spawntime="180" />
-		<monster name="Toxicroak" x="-16" y="16" z="7" spawntime="60" />
+		<monster name="toxicroak" x="-16" y="16" z="7" spawntime="60" />
 	</spawn>
 	<spawn centerx="2372" centery="1054" centerz="7" radius="17" />
 	<spawn centerx="2787" centery="1054" centerz="7" radius="1">
@@ -12635,8 +12659,8 @@
 		<monster name="Croagunk" x="2" y="23" z="7" spawntime="180" />
 		<monster name="Croagunk" x="3" y="23" z="7" spawntime="180" />
 		<monster name="Croagunk" x="-2" y="24" z="7" spawntime="180" />
-		<monster name="Toxicroak" x="19" y="27" z="7" spawntime="180" />
-		<monster name="Toxicroak" x="20" y="29" z="7" spawntime="180" />
+		<monster name="toxicroak" x="19" y="27" z="7" spawntime="180" />
+		<monster name="toxicroak" x="20" y="29" z="7" spawntime="180" />
 	</spawn>
 	<spawn centerx="2418" centery="1066" centerz="7" radius="1" />
 	<spawn centerx="430" centery="1067" centerz="7" radius="1">
@@ -13330,9 +13354,9 @@
 		<monster name="Nidoran Male" x="0" y="-1" z="7" spawntime="60" />
 	</spawn>
 	<spawn centerx="2398" centery="1088" centerz="7" radius="30">
-		<monster name="Toxicroak" x="-25" y="9" z="7" spawntime="60" />
-		<monster name="Toxicroak" x="-26" y="12" z="7" spawntime="180" />
-		<monster name="Toxicroak" x="-23" y="21" z="7" spawntime="180" />
+		<monster name="toxicroak" x="-25" y="9" z="7" spawntime="60" />
+		<monster name="toxicroak" x="-26" y="12" z="7" spawntime="180" />
+		<monster name="toxicroak" x="-23" y="21" z="7" spawntime="180" />
 		<monster name="Delcatty" x="23" y="27" z="7" spawntime="60" />
 		<monster name="Burmy" x="29" y="28" z="7" spawntime="60" />
 		<monster name="Cacturne" x="6" y="29" z="7" spawntime="60" />
@@ -13452,7 +13476,7 @@
 		<monster name="Rhyhorn" x="0" y="0" z="7" spawntime="60" />
 	</spawn>
 	<spawn centerx="537" centery="1094" centerz="7" radius="1">
-		<npc name="Simon the Guard" x="1" y="0" z="7" spawntime="60" direction="1" />
+		<npc name="Simon The Guard" x="1" y="0" z="7" spawntime="60" direction="1" />
 	</spawn>
 	<spawn centerx="565" centery="1094" centerz="7" radius="1">
 		<monster name="Fearow" x="0" y="0" z="7" spawntime="60" />
@@ -14212,14 +14236,14 @@
 		<monster name="Exeggutor" x="-6" y="10" z="7" spawntime="60" />
 	</spawn>
 	<spawn centerx="2356" centery="1114" centerz="7" radius="9">
-		<monster name="Toxicroak" x="-7" y="-1" z="7" spawntime="180" />
-		<monster name="Toxicroak" x="-5" y="1" z="7" spawntime="180" />
-		<monster name="Toxicroak" x="8" y="1" z="7" spawntime="180" />
-		<monster name="Toxicroak" x="8" y="2" z="7" spawntime="180" />
-		<monster name="Toxicroak" x="9" y="2" z="7" spawntime="180" />
-		<monster name="Toxicroak" x="-2" y="3" z="7" spawntime="180" />
-		<monster name="Toxicroak" x="5" y="4" z="7" spawntime="60" />
-		<monster name="Toxicroak" x="8" y="4" z="7" spawntime="180" />
+		<monster name="toxicroak" x="-7" y="-1" z="7" spawntime="180" />
+		<monster name="toxicroak" x="-5" y="1" z="7" spawntime="180" />
+		<monster name="toxicroak" x="8" y="1" z="7" spawntime="180" />
+		<monster name="toxicroak" x="8" y="2" z="7" spawntime="180" />
+		<monster name="toxicroak" x="9" y="2" z="7" spawntime="180" />
+		<monster name="toxicroak" x="-2" y="3" z="7" spawntime="180" />
+		<monster name="toxicroak" x="5" y="4" z="7" spawntime="60" />
+		<monster name="toxicroak" x="8" y="4" z="7" spawntime="180" />
 	</spawn>
 	<spawn centerx="2834" centery="1114" centerz="7" radius="21">
 		<monster name="Butterfree" x="-14" y="-19" z="7" spawntime="60" />
@@ -14509,7 +14533,7 @@
 		<monster name="Mankey" x="0" y="0" z="7" spawntime="60" />
 	</spawn>
 	<spawn centerx="2381" centery="1119" centerz="7" radius="1">
-		<monster name="Toxicroak" x="0" y="0" z="7" spawntime="60" />
+		<monster name="toxicroak" x="0" y="0" z="7" spawntime="60" />
 	</spawn>
 	<spawn centerx="2799" centery="1119" centerz="7" radius="21">
 		<monster name="Cacturne" x="-11" y="-8" z="7" spawntime="60" />
@@ -15140,6 +15164,9 @@
 		<monster name="Koffing" x="3" y="14" z="7" spawntime="60" />
 		<monster name="Weezing" x="7" y="20" z="7" spawntime="60" />
 	</spawn>
+	<spawn centerx="2347" centery="1144" centerz="7" radius="1">
+		<npc name="Token Trader" x="-1" y="0" z="7" spawntime="60" />
+	</spawn>
 	<spawn centerx="2416" centery="1144" centerz="7" radius="1" />
 	<spawn centerx="2503" centery="1145" centerz="7" radius="5" />
 	<spawn centerx="2902" centery="1145" centerz="7" radius="1">
@@ -15443,20 +15470,20 @@
 		<monster name="Buneary" x="-8" y="23" z="7" spawntime="60" />
 	</spawn>
 	<spawn centerx="3048" centery="1157" centerz="7" radius="30">
-		<monster name="Toxicroak" x="8" y="-6" z="7" spawntime="60" />
+		<monster name="toxicroak" x="8" y="-6" z="7" spawntime="60" />
 		<monster name="Muk" x="-2" y="-3" z="7" spawntime="60" />
-		<monster name="Toxicroak" x="1" y="-3" z="7" spawntime="60" />
+		<monster name="toxicroak" x="1" y="-3" z="7" spawntime="60" />
 		<monster name="Muk" x="3" y="-2" z="7" spawntime="60" />
 		<monster name="Muk" x="4" y="0" z="7" spawntime="60" />
-		<monster name="Toxicroak" x="10" y="1" z="7" spawntime="60" />
+		<monster name="toxicroak" x="10" y="1" z="7" spawntime="60" />
 		<monster name="Muk" x="-1" y="2" z="7" spawntime="60" />
 		<monster name="Muk" x="3" y="2" z="7" spawntime="60" />
-		<monster name="Toxicroak" x="2" y="4" z="7" spawntime="60" />
-		<monster name="Toxicroak" x="10" y="4" z="7" spawntime="60" />
-		<monster name="Toxicroak" x="-1" y="5" z="7" spawntime="60" />
+		<monster name="toxicroak" x="2" y="4" z="7" spawntime="60" />
+		<monster name="toxicroak" x="10" y="4" z="7" spawntime="60" />
+		<monster name="toxicroak" x="-1" y="5" z="7" spawntime="60" />
 		<monster name="Muk" x="4" y="5" z="7" spawntime="60" />
 		<monster name="Muk" x="-2" y="10" z="7" spawntime="60" />
-		<monster name="Toxicroak" x="4" y="10" z="7" spawntime="60" />
+		<monster name="toxicroak" x="4" y="10" z="7" spawntime="60" />
 	</spawn>
 	<spawn centerx="2589" centery="1158" centerz="7" radius="1">
 		<monster name="Spinda" x="-1" y="-1" z="7" spawntime="180" />
@@ -15615,6 +15642,9 @@
 	</spawn>
 	<spawn centerx="327" centery="1171" centerz="7" radius="5">
 		<monster name="Swampert" x="1" y="-1" z="7" spawntime="60" />
+	</spawn>
+	<spawn centerx="2820" centery="1171" centerz="7" radius="1">
+		<npc name="Token Trader" x="-1" y="0" z="7" spawntime="60" />
 	</spawn>
 	<spawn centerx="2225" centery="1173" centerz="7" radius="9">
 		<monster name="Illumise" x="-1" y="-7" z="7" spawntime="60" />
@@ -16574,6 +16604,9 @@
 		<monster name="Azurill" x="15" y="7" z="7" spawntime="60" />
 		<monster name="Azumarill" x="17" y="7" z="7" spawntime="60" />
 	</spawn>
+	<spawn centerx="2448" centery="1223" centerz="7" radius="1">
+		<npc name="Token Trader" x="0" y="0" z="7" spawntime="60" />
+	</spawn>
 	<spawn centerx="2789" centery="1224" centerz="7" radius="18">
 		<monster name="Illumise" x="-12" y="-17" z="7" spawntime="180" />
 		<monster name="Kricketune" x="-12" y="-16" z="7" spawntime="60" />
@@ -16788,6 +16821,9 @@
 	<spawn centerx="2810" centery="1244" centerz="7" radius="1">
 		<monster name="Grotle" x="-1" y="0" z="7" spawntime="180" />
 		<monster name="Grotle" x="0" y="0" z="7" spawntime="60" />
+	</spawn>
+	<spawn centerx="1079" centery="1245" centerz="7" radius="1">
+		<npc name="Token Trader" x="0" y="0" z="7" spawntime="60" />
 	</spawn>
 	<spawn centerx="2140" centery="1245" centerz="7" radius="30">
 		<monster name="Mawile" x="-2" y="-22" z="7" spawntime="60" />
@@ -17719,6 +17755,9 @@
 		<npc name="Nurse Chansey" x="0" y="0" z="7" spawntime="60" />
 		<npc name="Nurse" x="1" y="0" z="7" spawntime="60" />
 	</spawn>
+	<spawn centerx="3221" centery="1298" centerz="7" radius="1">
+		<npc name="Token Trader" x="0" y="0" z="7" spawntime="60" />
+	</spawn>
 	<spawn centerx="2625" centery="1299" centerz="7" radius="30" />
 	<spawn centerx="2997" centery="1299" centerz="7" radius="1">
 		<npc name="mark" x="0" y="0" z="7" spawntime="60" />
@@ -17756,6 +17795,9 @@
 	</spawn>
 	<spawn centerx="1136" centery="1303" centerz="7" radius="1">
 		<monster name="Doduo" x="0" y="0" z="7" spawntime="60" />
+	</spawn>
+	<spawn centerx="2962" centery="1303" centerz="7" radius="1">
+		<npc name="Token Trader" x="0" y="0" z="7" spawntime="60" />
 	</spawn>
 	<spawn centerx="3179" centery="1303" centerz="7" radius="21">
 		<monster name="Sentret" x="15" y="-9" z="7" spawntime="60" />
@@ -19172,39 +19214,39 @@
 		<monster name="Victreebel" x="3" y="12" z="7" spawntime="60" />
 	</spawn>
 	<spawn centerx="2980" centery="1399" centerz="7" radius="16">
-		<monster name="Toxicroak" x="-15" y="-12" z="7" spawntime="60" />
+		<monster name="toxicroak" x="-15" y="-12" z="7" spawntime="60" />
 		<monster name="Croagunk" x="-13" y="-11" z="7" spawntime="60" />
 		<monster name="Croagunk" x="-9" y="-8" z="7" spawntime="60" />
-		<monster name="Toxicroak" x="0" y="-8" z="7" spawntime="60" />
-		<monster name="Toxicroak" x="7" y="-8" z="7" spawntime="60" />
+		<monster name="toxicroak" x="0" y="-8" z="7" spawntime="60" />
+		<monster name="toxicroak" x="7" y="-8" z="7" spawntime="60" />
 		<monster name="Croagunk" x="4" y="-7" z="7" spawntime="60" />
 		<monster name="Croagunk" x="8" y="-6" z="7" spawntime="60" />
-		<monster name="Toxicroak" x="-9" y="-4" z="7" spawntime="60" />
+		<monster name="toxicroak" x="-9" y="-4" z="7" spawntime="60" />
 		<monster name="Croagunk" x="-9" y="-3" z="7" spawntime="60" />
-		<monster name="Toxicroak" x="11" y="-3" z="7" spawntime="60" />
-		<monster name="Toxicroak" x="-6" y="-2" z="7" spawntime="60" />
-		<monster name="Toxicroak" x="12" y="-1" z="7" spawntime="60" />
+		<monster name="toxicroak" x="11" y="-3" z="7" spawntime="60" />
+		<monster name="toxicroak" x="-6" y="-2" z="7" spawntime="60" />
+		<monster name="toxicroak" x="12" y="-1" z="7" spawntime="60" />
 		<monster name="Croagunk" x="-5" y="0" z="7" spawntime="60" />
 		<monster name="Croagunk" x="-12" y="2" z="7" spawntime="60" />
-		<monster name="Toxicroak" x="-1" y="2" z="7" spawntime="60" />
-		<monster name="Toxicroak" x="2" y="3" z="7" spawntime="60" />
-		<monster name="Toxicroak" x="11" y="3" z="7" spawntime="180" />
-		<monster name="Toxicroak" x="12" y="3" z="7" spawntime="60" />
+		<monster name="toxicroak" x="-1" y="2" z="7" spawntime="60" />
+		<monster name="toxicroak" x="2" y="3" z="7" spawntime="60" />
+		<monster name="toxicroak" x="11" y="3" z="7" spawntime="180" />
+		<monster name="toxicroak" x="12" y="3" z="7" spawntime="60" />
 		<monster name="Croagunk" x="0" y="4" z="7" spawntime="60" />
 		<monster name="Croagunk" x="12" y="4" z="7" spawntime="60" />
-		<monster name="Toxicroak" x="-12" y="5" z="7" spawntime="60" />
-		<monster name="Toxicroak" x="1" y="5" z="7" spawntime="60" />
+		<monster name="toxicroak" x="-12" y="5" z="7" spawntime="60" />
+		<monster name="toxicroak" x="1" y="5" z="7" spawntime="60" />
 		<monster name="Croagunk" x="-11" y="6" z="7" spawntime="60" />
-		<monster name="Toxicroak" x="-1" y="7" z="7" spawntime="60" />
-		<monster name="Toxicroak" x="11" y="8" z="7" spawntime="60" />
+		<monster name="toxicroak" x="-1" y="7" z="7" spawntime="60" />
+		<monster name="toxicroak" x="11" y="8" z="7" spawntime="60" />
 		<monster name="Croagunk" x="11" y="10" z="7" spawntime="60" />
-		<monster name="Toxicroak" x="-9" y="12" z="7" spawntime="60" />
+		<monster name="toxicroak" x="-9" y="12" z="7" spawntime="60" />
 		<monster name="Croagunk" x="7" y="13" z="7" spawntime="60" />
 		<monster name="Croagunk" x="-5" y="14" z="7" spawntime="60" />
-		<monster name="Toxicroak" x="9" y="14" z="7" spawntime="60" />
+		<monster name="toxicroak" x="9" y="14" z="7" spawntime="60" />
 		<monster name="Pineco" x="-5" y="15" z="7" spawntime="60" />
-		<monster name="Toxicroak" x="-2" y="15" z="7" spawntime="60" />
-		<monster name="Toxicroak" x="6" y="16" z="7" spawntime="60" />
+		<monster name="toxicroak" x="-2" y="15" z="7" spawntime="60" />
+		<monster name="toxicroak" x="6" y="16" z="7" spawntime="60" />
 	</spawn>
 	<spawn centerx="1392" centery="1400" centerz="7" radius="5">
 		<monster name="Muk" x="-2" y="-1" z="7" spawntime="60" />
@@ -19252,6 +19294,9 @@
 	<spawn centerx="562" centery="1406" centerz="7" radius="6">
 		<monster name="Magcargo" x="0" y="3" z="7" spawntime="60" />
 		<monster name="Magmar" x="1" y="3" z="7" spawntime="60" />
+	</spawn>
+	<spawn centerx="845" centery="1406" centerz="7" radius="1">
+		<npc name="Token Trader" x="0" y="0" z="7" spawntime="60" />
 	</spawn>
 	<spawn centerx="2969" centery="1408" centerz="7" radius="1" />
 	<spawn centerx="552" centery="1409" centerz="7" radius="1">
@@ -19314,7 +19359,7 @@
 		<monster name="Caterpie" x="0" y="0" z="7" spawntime="60" />
 	</spawn>
 	<spawn centerx="2981" centery="1416" centerz="7" radius="5">
-		<monster name="Toxicroak" x="-1" y="1" z="7" spawntime="60" />
+		<monster name="toxicroak" x="-1" y="1" z="7" spawntime="60" />
 	</spawn>
 	<spawn centerx="549" centery="1418" centerz="7" radius="6">
 		<monster name="Magcargo" x="0" y="-6" z="7" spawntime="60" />
@@ -21247,6 +21292,9 @@
 		<monster name="Shellder" x="-4" y="9" z="7" spawntime="60" />
 		<monster name="Seel" x="-16" y="17" z="7" spawntime="60" />
 		<monster name="Shellder" x="3" y="29" z="7" spawntime="60" />
+	</spawn>
+	<spawn centerx="373" centery="1669" centerz="7" radius="1">
+		<npc name="Token Trader" x="0" y="0" z="7" spawntime="60" />
 	</spawn>
 	<spawn centerx="456" centery="1669" centerz="7" radius="5">
 		<monster name="Furret" x="-3" y="-3" z="7" spawntime="60" />
