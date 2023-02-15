@@ -32,7 +32,7 @@ function creatureSayCallback(cid, type, msg)
 			tokensToBuy = msg
 			npcHandler.topic[cid] = 2
 		else
-			selfSay("Please only input a number")
+			selfSay("Please only input a number", cid)
 			npcHandler.topic[cid] = 1
 		end
 	elseif npcHandler.topic[cid] == 2 and msgcontains(msg, "yes") then
