@@ -131,7 +131,7 @@ local function firstArenaEventWarning()
 	addEvent(secondArenaEventWarning, 2 * 60 * 1000)
 end
 
-function onTime(interval)
+function onThink(interval)
 	local hour = os.date("%H")
 	if hour % 2 == 0 then
 		return true
