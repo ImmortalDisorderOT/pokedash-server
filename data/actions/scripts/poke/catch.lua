@@ -96,7 +96,7 @@ function onUse(player, item, fromPosition, target, toPosition, isHotkey)
 			if not addPokeball then
 				print("ERROR! Player " .. player:getName() .. " lost pokemon " .. name .. "! addPokeball false")
 			end
-			addEvent(doPlayerSendTextMessage, delayMessage + 2000, player:getId(), MESSAGE_EVENT_ADVANCE, "Since you are at maximum capacity, your ball was sent to CP.")
+			addEvent(doPlayerSendTextMessage, delayMessage + 2000, player:getId(), MESSAGE_EVENT_ADVANCE, "Since you are at maximum capacity, your ball was sent to the PokeCenter mail box.")
 		end
 		
 		local playerLevel = player:getLevel()

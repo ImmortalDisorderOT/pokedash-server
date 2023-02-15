@@ -2641,7 +2641,7 @@ function doAddPokeball(cid, name, level, boost, ballKey, dp, msg)
 			if dp == false then -- try send to CP because BP is full
 				local depot = player:getInbox()
 				addBall = depot:addItem(balls[ballKey].usedOn, 1, INDEX_WHEREEVER, FLAG_NOLIMIT)
-				addEvent(doPlayerSendTextMessage, msg, cid, MESSAGE_EVENT_ADVANCE, "Since you are at maximum capacity, your ball was sent to CP.")
+				addEvent(doPlayerSendTextMessage, msg, cid, MESSAGE_EVENT_ADVANCE, "Since you are at maximum capacity, your ball was sent to PokeCenter Mail Box..")
 --				print("WARNING! Player " .. player:getName() .. " sending pokemon " .. name .. " to CP after first try.")
 				dp = true
 			else

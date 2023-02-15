@@ -129,7 +129,7 @@ function onLogin(player)
 		if not addBall then
 			print("WARNING! Player " .. player:getName() .. " had problems sending ball from ammo to cp.")
 		else
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Your Pokemon was sent to CP.")
+			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Your Pokemon was sent to PokeCenter Mail Box.")
 		end
 	end
 	local portrait = player:getSlotItem(CONST_SLOT_HEAD)
@@ -158,7 +158,7 @@ function onLogin(player)
 --	end
 
 	-- Announces
-	player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Welcome to Pokedash Pota v1.0")
+	player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Welcome to Immortal Disorder PokeMon Server!")
 
 	return true
 end
