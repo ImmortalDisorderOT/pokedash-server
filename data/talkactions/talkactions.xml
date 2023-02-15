@@ -55,6 +55,8 @@
 	<talkaction words="!desbugar" script="desbugar.lua" />
 	<talkaction words="!tutorial" script="tutorial.lua" />
 	<talkaction words="!teleport" separator=" " script="summon_teleport.lua" />
+	<talkaction words="!tele" separator=" " script="summon_teleport.lua" />
+	<talkaction words="!t" separator=" " script="summon_teleport.lua" />
 	<talkaction words="!comandos" script="commands.lua" />
 	<talkaction words="!commands" script="commands.lua" />
 	<talkaction words="!autoloot" script="autoloot.lua" />
