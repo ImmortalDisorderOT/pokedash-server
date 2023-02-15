@@ -5,6 +5,4 @@
 	<globalevent name="Server Save" interval="3600000" script="serversave.lua" />
 	<globalevent name="Bag Event" interval="3600000" script="bagevent.lua" />
 	<globalevent name="Arena Event" interval="3600000" script="arenaevent.lua" />
-	<globalevent name="Soccer Event" time="19:30:00" script="soccerevent.lua" />
-	<globalevent name="Arena Pvp Event" time="20:00:00" script="pvparenaevent.lua" />
 </globalevents>
