@@ -1,4 +1,4 @@
-local halloweenChance = 3
+local halloweenChance = 1
 local christmasChance = 3
 local megaChance = 1
 
@@ -311,18 +311,18 @@ function Monster:onSpawn(position, startup, artificial)
 				end
 			end
 		end
-		if math.random(1, 100) <= halloweenChance then --halloween
-			for i = 1, #halloweenPokes do
-				if name == halloweenPokes[i].name then
-					Game.createMonster(halloweenPokes[i].newName, position, false, false, 0, 0)
-					return false
-				end
-			end
-		end
 		if math.random(1, 100) <= christmasChance then --christmas
 			for i = 1, #christmasPokes do
 				if name == christmasPokes[i].name then
 					Game.createMonster(christmasPokes[i].newName, position, false, false, 0, 0)
+					return false
+				end
+			end
+		end
+		if math.random(1, 100) <= halloweenChance then --halloween
+			for i = 1, #halloweenPokes do
+				if name == halloweenPokes[i].name then
+					Game.createMonster(halloweenPokes[i].newName, position, false, false, 0, 0)
 					return false
 				end
 			end
