@@ -10,7 +10,7 @@ function onSay(player, words, param)
         local isBallBeingUsed = ball:getSpecialAttribute("isBeingUsed")
         if isBallBeingUsed and isBallBeingUsed == 1 then
             player:sendTextMessage(MESSAGE_STATUS_CONSOLE_BLUE, "Sorry, not possible while using the Pokemon.")
-            return true
+            return false
         end
 
         local boost = ball:getSpecialAttribute("pokeBoost") or 0
