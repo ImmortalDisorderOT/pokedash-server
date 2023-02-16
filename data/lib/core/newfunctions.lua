@@ -22,11 +22,11 @@ playerLevelDamageBuff = 0.0005 -- buff due to player's level
 summonBoostDamageBuff = 0.008 -- buff due to summon's boost
 summonLoveDamageBuff = 0.0004 -- buff due to summon's love
 vitaminStatusBuff = 1.2
-hunterDamageBuff = 1.1
-blockerHealthBuff = 1.25
-catcherCatchBuff = 1.1
-explorerExperienceBuff = 1.15
-healerHealBuff = 2.0
+hunterDamageBuff = 1.2
+blockerHealthBuff = 1.40
+catcherCatchBuff = 1.5
+explorerExperienceBuff = 1.25
+healerHealBuff = 2.5
 
 storageDelay = 1000
 storageDelayBag = 1001
