@@ -66,7 +66,7 @@ function onUse(player, item, fromPosition, target, toPosition, isHotkey)
 		player:sendCancelMessage("Sorry, not possible. This problem was reported.")
 		return true
 	end
-	local chance = monsterType:catchChance() * balls[ballKey].chanceMultiplier * 1.15
+	local chance = monsterType:catchChance() * balls[ballKey].chanceMultiplier * 1.2
 	if player:getVocation():getName() == "Catcher" then
 		chance = chance * catcherCatchBuff
 	end
