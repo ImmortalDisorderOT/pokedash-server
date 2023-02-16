@@ -61,6 +61,7 @@
 	<talkaction words="!commands" script="commands.lua" />
 	<talkaction words="!autoloot" script="autoloot.lua" />
 	<talkaction words="!catch" script="verify_catch.lua" />
+	<talkaction words="!sellallpokemon" script="sellpokemons.lua" />
 
 	<!-- test talkactions -->
 	<talkaction words="!z" separator=" " script="magiceffect.lua" />

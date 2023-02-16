@@ -191,3 +191,4 @@ TODO.txt
 ## Ignoring map file due to size (make sure you zip...)
 forgotten.otbm
 *.otbm
+data/world/global_dash.otbm
