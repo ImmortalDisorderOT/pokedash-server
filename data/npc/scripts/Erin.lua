@@ -19,7 +19,7 @@ local prizes =
 		[8] = {name = "leaf stone", count = 50},
 		[9] = {name = "box 4", count = 1}
 	}
-local prizesNumber = math.random(3, 5)
+local prizesNumber = math.random(1, 3)
 local idDie = {23582, 5792, 5793, 5794, 5795, 5796, 5797}
 local number
 local numberTook
@@ -104,10 +104,22 @@ local function creatureOnThinkCallback()
 				end
 			end
 
-			if npcHandler.topic[cid] == 5 then			
+			if npcHandler.topic[cid] == 5 then	
 				if numberTook == number then
-					selfSay("Congratulations, " .. creature:getName() .. "!" .. " Roll the dice on a bag to collect your prize!")
-					npcHandler.topic[cid] = 6
+					selfSay("Congratulations, " .. creature:getName() .. "! You won a prize!")
+					local msg = "Player " .. creature:getName() .. " picked the number  " .. number .. " and won: " 
+					local container = Container(creature:addItem(idBag, 1).uid)
+					for i = 1, prizesNumber do
+						local random = math.random(1, #prizes)
+						container:addItem(prizes[random].name, prizes[random].count)
+						if i < prizesNumber then
+							msg = msg .. prizes[random].count .. " " .. prizes[random].name .. ", "
+						else
+							msg = msg .. prizes[random].count .. " " .. prizes[random].name .. ". Congratulations!"
+						end
+					end
+					broadcastMessage(msg, MESSAGE_STATUS_WARNING)
+					doTeleportPlayerTemple(cid)
 				else
 					selfSay("Not this time, " .. creature:getName() .. "!")
 					dice:remove()
@@ -115,57 +127,6 @@ local function creatureOnThinkCallback()
 					local msg = "Player " .. creature:getName() .. " picked the number " .. number .. " and drew the number " .. numberTook .. ". Not this time!"
 					broadcastMessage(msg, MESSAGE_STATUS_WARNING)
 				end
-			end
-
-			if npcHandler.topic[cid] == 6 then
-				if not dice then
-					local found = false
-					for x = npcPosition.x + minPosBags[1], npcPosition.x + maxPosBags[1] do
-						for y = npcPosition.y + minPosBags[2], npcPosition.y + maxPosBags[2] do
-							local throwTile = Tile(Position(x, y, npcPosition.z))
-							if throwTile then
-								local throwItem = throwTile:getTopDownItem()
-								if throwItem and isInArray(idDie, throwItem:getId()) then
-									throwItem:remove()
-									found = true
-								end	
-							end
-						end
-					end
-					if found then
-						local msg = "Player " .. creature:getName() .. " picked the number  " .. number .. " and won: " 
-						doTeleportPlayerTemple(cid)
-						local container = Container(creature:addItem(idBag, 1).uid)
-						for i = 1, prizesNumber do
-							local random = math.random(1, #prizes)
-							container:addItem(prizes[random].name, prizes[random].count)
-							if i < prizesNumber then
-								msg = msg .. prizes[random].count .. " " .. prizes[random].name .. ", "
-							else
-								msg = msg .. prizes[random].count .. " " .. prizes[random].name .. ". Congratulations!"
-							end
-						end
-						broadcastMessage(msg, MESSAGE_STATUS_WARNING)
-					else
-						selfSay("You threw the dice in the wrong place, " .. creature:getName() .. "! Lost his prize...")
-						print("WARNING! Player " .. creature:getName() .. " He threw the dice in the wrong place.")
-						for x = playerPosition.x - 7, playerPosition.x + 7 do
-							for y = playerPosition.y - 7, playerPosition.y + 7 do
-								local throwTile = Tile(Position(x, y, npcPosition.z))
-								if throwTile then
-									local throwItem = throwTile:getTopDownItem()
-									if throwItem and isInArray(idDie, throwItem:getId()) then
-										throwItem:remove()
-										print("WARNING!  Lost data deleted.")
-									end
-								end
-							end
-						end
-						doTeleportPlayerTemple(cid)
-					end
-
-				end
-
 			end
 
 			if os.time() > creature:getStorageValue(storageDelayBag) then
