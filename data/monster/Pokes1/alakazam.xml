@@ -19,7 +19,7 @@
 		<flag runonhealth="0" />
 		<flag dexentry="65" />
 		<flag portraitid="27181" />
-		<flag hasshiny="0" />
+		<flag hasshiny="1" />
 		<flag hasmega="0" />
 		<flag flyable="0" />
 		<flag rideable="0" />
