@@ -9,7 +9,7 @@ function onMove(creature, toPosition, fromPosition)
 
         local fromTile = Tile(fromPosition)
         local fromItem = fromTile:getItemById(flyFloor)
-        if fromItem then
+        if fromItem and toPosition.z ~= 0 then
             fromItem:remove()
         end
 --	local toTile = Tile(toPosition)
