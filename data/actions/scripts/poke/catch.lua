@@ -5,6 +5,66 @@ local multiplierExpNormal = 200
 local multiplierExpFirstShiny = 3000
 local multiplierExpShiny = 1000
 
+local shareablePokemon = {
+	"Mummy Charmander",
+	"Ghost Pikachu",
+	"Pirate Raichu",
+	"Raven Fearow",
+	"Werewolf Nidoking",
+	"Frankstein Vileplume",
+	"Skull Golem",
+	"Hauting Haunter",
+	"Panic Hypno",
+	"Pumpkin Cubone",
+	"Executioner Marowak",
+	"Witch Vaporeon",
+	"Vampire Jolteon",
+	"Cultist Flareon",
+	"Undead Omanyte",
+	"Undead Omastar",
+	"Undead Kabuto",
+	"Undead Kabutops",
+	"Undead Aerodactyl",
+	"Devil Scizor",
+	"Santa Snorlax",
+	"Xmas Diglett",
+	"Xmas Caterpie",
+	"Xmas Psyduck",
+	"Xmas Seel",
+	"Xmas Pikachu",
+	"Xmas Jynx",
+	"Xmas Bulbasaur",
+	"Xmas Ditto",
+	"Xmas Elekid",
+	"Xmas Eevee",
+	"Xmas Charmander",
+	"Xmas Squirtle",
+	"Xmas Rattata",
+	"Xmas Golbat",
+	"Xmas Aipom",
+	"Xmas Ledyba",
+	"Xmas Totodile",
+	"Xmas Abra",
+	"Xmas Chikorita",
+	"Xmas Meowth",
+	"Xmas Gastly",
+	"Xmas Jigglypuff",
+	"Xmas Clefairy",
+	"Xmas Wooper",
+	"Xmas Togepi",
+	"Xmas Teddiursa",
+	"Xmas Machop",
+	"Xmas Cubone",
+	"Xmas Hitmontop",
+	"Xmas Mantine",
+	"Santa Blissey",
+	"Reindeer Miltank",
+	"Grinch Armaldo",
+	"Snowman Aggron",
+	"Decorated Sudowoodo",
+	"Grinch Banette",
+}
+
 local function doPlayerSendEffect(cid, effect)
 	local player = Player(cid)
 	if player then
@@ -140,6 +200,13 @@ function onUse(player, item, fromPosition, target, toPosition, isHotkey)
 		addEvent(doSendMagicEffect, delay, toPosition, balls[ballKey].effectSucceed)
 		addEvent(doPlayerSendTextMessage, delayMessage, player:getId(), MESSAGE_EVENT_ADVANCE, "Congratulations! You have caught a " .. name .. "!")
 		addEvent(doPlayerSendEffect, delayMessage, player:getId(), 297)
+		-- for party catching
+		if player:getParty():isSharedExperienceEnabled() and msgcontains(name, 'Shiny') or isInArray(shareablePokemon, name) or isInArray(legendaryIndex, monsterNumber) then
+			for _, partyPlayer in ipairs(getPartyMembers(player:getId())) do
+				addEvent(doAddPokeball, delayMessage, partyPlayer, name, level, initialBoost, ballKey, false, delayMessage)
+				addEvent(doPlayerSendTextMessage, delayMessage, partyPlayer, MESSAGE_EVENT_ADVANCE, "Congratulations! Someone in your party caught a " .. name .. "! One has been sent to you!")
+			end
+		end
 	else -- missed		
 		addEvent(doSendMagicEffect, delay, toPosition, balls[ballKey].effectFail)
 		addEvent(doPlayerSendEffect, delayMessage, player:getId(), 286)

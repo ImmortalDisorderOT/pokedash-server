@@ -1362,8 +1362,9 @@ latiosLabyrinth = {
 			[1] = {
 				uid = 10250,
 				items = {
-					[1] = {item = "crystal coin", count = 50},
-					[2] = {item = "empty premierball", count = 50}
+					[1] = {item = "crystal coin", count = 200},
+					[2] = {item = "empty premierball", count = 100},
+					[3] = {item = "box 5", count = 1}
 				},
 				pokes = {
 				},
