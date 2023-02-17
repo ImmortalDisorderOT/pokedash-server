@@ -425,34 +425,10 @@ bool Party::canUseSharedExperience(const Player* player) const
 		return false;
 	}
 
-	uint32_t highestLevel = leader->getLevel();
-	for (Player* member : memberList) {
-		if (member->getLevel() > highestLevel) {
-			highestLevel = member->getLevel();
-		}
-	}
-
-	uint32_t minLevel = static_cast<int32_t>(std::ceil((static_cast<float>(highestLevel) * 2) / 3));
-	if (player->getLevel() < minLevel) {
+	if (!Position::areInRange<45, 45, 1>(leader->getPosition(), player->getPosition())) {
 		return false;
 	}
 
-	if (!Position::areInRange<30, 30, 1>(leader->getPosition(), player->getPosition())) {
-		return false;
-	}
-
-	if (!player->hasFlag(PlayerFlag_NotGainInFight)) {
-		//check if the player has healed/attacked anything recently
-		auto it = ticksMap.find(player->getID());
-		if (it == ticksMap.end()) {
-			return false;
-		}
-
-		uint64_t timeDiff = OTSYS_TIME() - it->second;
-		if (timeDiff > static_cast<uint64_t>(g_config.getNumber(ConfigManager::PZ_LOCKED))) {
-			return false;
-		}
-	}
 	return true;
 }
 
