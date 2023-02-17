@@ -89,11 +89,14 @@ function onUse(player, item, fromPosition, target, toPosition, isHotkey)
 	local targetCorpse = tile:getTopDownItem()
 
 	local owner = targetCorpse:getAttribute(ITEM_ATTRIBUTE_CORPSEOWNER)
-	if owner ~= 0 and owner ~= player:getId() then
+	if not (player:getParty() and isInArray(getPartyMembers(player:getId()), player:getId())) then
+		player:sendCancelMessage("Sorry, not possible. You are not the owner.")
+		return true
+	elseif not player:getParty() and owner ~= player:getId() then
 		player:sendCancelMessage("Sorry, not possible. You are not the owner.")
 		return true
 	end
-	
+
 	local ballKey = getBallKey(item:getId())
 	local playerPos = getPlayerPosition(player)
 	local d = getDistanceBetween(playerPos, toPosition)
@@ -200,18 +203,19 @@ function onUse(player, item, fromPosition, target, toPosition, isHotkey)
 		addEvent(doSendMagicEffect, delay, toPosition, balls[ballKey].effectSucceed)
 		addEvent(doPlayerSendTextMessage, delayMessage, player:getId(), MESSAGE_EVENT_ADVANCE, "Congratulations! You have caught a " .. name .. "!")
 		addEvent(doPlayerSendEffect, delayMessage, player:getId(), 297)
-		-- for party catching
-		if player:getParty():isSharedExperienceEnabled() and msgcontains(name, 'Shiny') or isInArray(shareablePokemon, name) or isInArray(legendaryIndex, monsterNumber) then
-			for _, partyPlayer in ipairs(getPartyMembers(player:getId())) do
-				addEvent(doAddPokeball, delayMessage, partyPlayer, name, level, initialBoost, ballKey, false, delayMessage)
-				addEvent(doPlayerSendTextMessage, delayMessage, partyPlayer, MESSAGE_EVENT_ADVANCE, "Congratulations! Someone in your party caught a " .. name .. "! One has been sent to you!")
-			end
-		end
 	else -- missed		
 		addEvent(doSendMagicEffect, delay, toPosition, balls[ballKey].effectFail)
 		addEvent(doPlayerSendEffect, delayMessage, player:getId(), 286)
 		return true
 	end	
-
+	-- party catching
+	--[[if player:getParty():isSharedExperienceEnabled() and msgcontains(name, 'Shiny') or isInArray(shareablePokemon, name) or isInArray(legendaryIndex, monsterNumber) then
+		for _, partyPlayer in ipairs(getPartyMembers(player:getId())) do
+			if math.random(1, 300) <= chance then
+				addEvent(doAddPokeball, delayMessage, partyPlayer, name, level, initialBoost, ballKey, false, delayMessage)
+				addEvent(doPlayerSendTextMessage, delayMessage, partyPlayer, MESSAGE_EVENT_ADVANCE, "Congratulations! Someone in your party caught a " .. name .. "! One has been sent to you!")
+			end
+		end
+	end]]
 	return true
 end
