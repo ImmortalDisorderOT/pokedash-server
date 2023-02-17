@@ -89,13 +89,17 @@ function onUse(player, item, fromPosition, target, toPosition, isHotkey)
 	local targetCorpse = tile:getTopDownItem()
 
 	local owner = targetCorpse:getAttribute(ITEM_ATTRIBUTE_CORPSEOWNER)
-	if not (player:getParty() and isInArray(getPartyMembers(player:getId()), player:getId())) then
-		player:sendCancelMessage("Sorry, not possible. You are not the owner.")
-		return true
-	elseif not player:getParty() and owner ~= player:getId() then
+	if owner ~= 0 and owner ~= player:getId() then
 		player:sendCancelMessage("Sorry, not possible. You are not the owner.")
 		return true
 	end
+	--[[if not (player:getParty() and isInArray(getPartyMembers(player:getId()), player:getId())) then
+		player:sendCancelMessage("Sorry, not possible. You are not the owner.")
+		return true
+	elseif owner ~= 0 and owner ~= player:getId() then
+		player:sendCancelMessage("Sorry, not possible. You are not the owner.")
+		return true
+	end]]
 
 	local ballKey = getBallKey(item:getId())
 	local playerPos = getPlayerPosition(player)
