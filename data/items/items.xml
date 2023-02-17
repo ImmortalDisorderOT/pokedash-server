@@ -29556,7 +29556,6 @@
 	</item>
 	<item id="11400" article="a" name="phoenix egg">
 		<attribute key="description" value="It seems to be burning from inside." />
-		<attribute key="weight" value="30" />
 	</item>
 	<item fromid="11401" toid="11402" article="a" name="Tibiora's box">
 		<attribute key="description" value="It contains all the knowledge of the lands gathered arduously." />
