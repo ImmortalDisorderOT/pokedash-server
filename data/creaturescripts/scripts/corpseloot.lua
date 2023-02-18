@@ -1,5 +1,5 @@
 local stones = {"leaf stone", "boost stone", "water stone", "venom stone", "thunder stone", "rock stone", "punch stone", "fire stone", "ice stone", "cocoon stone", "crystal stone", "darkness stone", "earth stone", "enigma stone", "heart stone", "metal coat", "sun stone", "feather stone", "king's rock stone", "dragon stone"}
-
+local moneyIds = {2160, 2148, 2152}
 local function doSendMultipleEffects(pos, effect, times, interval)
 	for i = 1, times do
 		addEvent(doSendMagicEffect, i * interval, pos, effect)
@@ -40,8 +40,13 @@ function onPostDeath(creature, corpse, killer, mostDamage, unjustified, mostDama
 				local itemName = item:getName()
 				local itemCount = item:getCount()
 				msg = msg .. itemCount .. " " .. itemName .. ", "
-				player:addItem(itemId, itemCount)
-				item:remove()
+				if isInArray(moneyIds, itemId) then
+					player:setBankBalance(player:getBankBalance() + itemCount)
+					item:remove()
+				else
+					player:addItem(itemId, itemCount)
+					item:remove()
+				end
 				nItems = nItems + 1
 				if isInArray(stones, itemName) then
 					doSendMultipleEffects(corpse:getPosition(), 56, 10, 600)
