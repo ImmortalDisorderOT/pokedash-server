@@ -26,7 +26,7 @@ monsterType:getMoveMagicAttackBase() + monsterType:getMoveMagicDefenseBase())* p
         end
         if ball:remove() then
             player:sendTextMessage(MESSAGE_STATUS_CONSOLE_BLUE, 'Take ' .. price .. 'gp for your ' .. name .. ', at level ' .. level .. ' boost ' .. boost .. '.')
-            player:addMoney(price)
+            player:setBankBalance(player:getBankBalance() + price)
         end
     end
     player:refreshPokemonBar({}, {})
