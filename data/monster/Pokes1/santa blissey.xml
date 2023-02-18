@@ -61,7 +61,7 @@
 		<attack name="soft boiled" interval="14000" chance="40"/>
 
 	</attacks>
-	<defenses armor="0" defense="120" >
+	<defenses armor="0" defense="150" >
 
 	</defenses>
 	<elements>

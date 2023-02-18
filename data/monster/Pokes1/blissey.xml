@@ -59,7 +59,7 @@
 		<attack name="hyper beam" interval="17000" chance="40"/>
 
 	</attacks>
-	<defenses armor="0" defense="90" >
+	<defenses armor="0" defense="110" >
 
 	</defenses>
 	<elements>
