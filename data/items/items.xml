@@ -11050,8 +11050,8 @@
 		<attribute key="slotType" value="backpack" />
 	</item>
 	<item id="1993" article="a" name="red bag">
-		<attribute key="weight" value="800" />
-		<attribute key="containerSize" value="8" />
+		<attribute key="weight" value="0" />
+		<attribute key="containerSize" value="6" />
 		<attribute key="slotType" value="backpack" />
 	</item>
 	<item id="1994" article="a" name="purple bag">
@@ -26427,8 +26427,8 @@
 		<attribute key="slotType" value="backpack" />
 	</item>
 	<item id="9775" article="a" name="brocade bag">
-		<attribute key="weight" value="800" />
-		<attribute key="containerSize" value="8" />
+		<attribute key="weight" value="0" />
+		<attribute key="containerSize" value="6" />
 		<attribute key="slotType" value="backpack" />
 	</item>
 	<item id="9776" article="a" name="yalahari armor">
