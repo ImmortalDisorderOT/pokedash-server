@@ -1,4 +1,4 @@
-local halloweenChance = 1
+local halloweenChance = 3
 local christmasChance = 3
 local megaChance = 1
 
