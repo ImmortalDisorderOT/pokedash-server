@@ -539,4 +539,5 @@
 	<house name="Blackthorn House #538" houseid="538" entryx="3144" entryy="934" entryz="7" rent="45000" townid="59" size="45" />
 	<house name="Blackthorn House #539" houseid="539" entryx="3150" entryy="934" entryz="7" rent="25000" townid="59" size="25" />
 	<house name="Blackthorn House #540" houseid="540" entryx="3157" entryy="934" entryz="7" rent="35000" townid="59" size="35" />
+	<house name="Island of Dreams" houseid="542" entryx="2252" entryy="1476" entryz="7" rent="0" townid="60" size="564" />
 </houses>

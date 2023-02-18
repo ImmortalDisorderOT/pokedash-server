@@ -6744,24 +6744,6 @@
 		<attribute key="duration" value="600" />
 		<attribute key="corpseType" value="blood" />
 	</item> 
-	<item id="27110" article="a" name="slain shiny lugia">
-		<attribute key="weight" value="20000" />
-		<attribute key="decayTo" value="0" />
-		<attribute key="duration" value="600" />
-		<attribute key="corpseType" value="blood" />
-	</item> 
-	<item id="27111" article="a" name="slain shiny ho-oh">
-		<attribute key="weight" value="20000" />
-		<attribute key="decayTo" value="0" />
-		<attribute key="duration" value="600" />
-		<attribute key="corpseType" value="blood" />
-	</item> 
-	<item id="27112" article="a" name="slain shiny celebi">
-		<attribute key="weight" value="20000" />
-		<attribute key="decayTo" value="0" />
-		<attribute key="duration" value="600" />
-		<attribute key="corpseType" value="blood" />
-	</item> 
 	<item id="28309" article="a" name="slain shiny treecko">
 		<attribute key="weight" value="20000" />
 		<attribute key="decayTo" value="0" />
