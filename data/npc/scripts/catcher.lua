@@ -68,11 +68,11 @@ local function creatureSayCallback(cid, type, msg)
 				else
 					local tokens = 1
 					if player:getStorageValue(storageCatchQuestDifficulty) == 1 then
-						tokens = math.random(4,6)
+						tokens = math.random(3,5)
 					elseif player:getStorageValue(storageCatchQuestDifficulty) == 2 then
-						tokens = math.random(8,9)
+						tokens = math.random(5,7)
 					elseif player:getStorageValue(storageCatchQuestDifficulty) == 3 then
-						tokens = math.random(12,15)
+						tokens = math.random(7,10)
 					end
 					player:addTokens(tokens)
 					npcHandler:say("Good job! Take " .. tokens .. " tokens as rewards. New Balance: " .. player:getTokens() .. ".", cid)

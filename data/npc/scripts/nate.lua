@@ -30,7 +30,7 @@ local function creatureSayCallback(cid, type, msg)
 		local timeSinceLast = os.time() - player:getStorageValue(storageItemQuestTime)
 		local timeRemaining = timeBetweenQuests - timeSinceLast
 		if (timeSinceLast > timeBetweenQuests) then
-			npcHandler:say("Posso te passar uma missao {facil}, {media} ou {dificil}, mas lembre-se que missoes dificeis geralmente trazem melhores recompensas. Qual prefere?", cid)
+			npcHandler:say("I can give you an {easy}, {medium} or {hard} quest, but remember that hard quests usually bring better rewards. Which one do you prefer?", cid)
 			npcHandler.topic[cid] = 1
 		elseif player:getStorageValue(storageItemQuestDay) == 0 then
 			local itemId = player:getStorageValue(storageItemQuestItem)
@@ -42,19 +42,19 @@ local function creatureSayCallback(cid, type, msg)
 			else
 				local tokens = 1
 				if player:getStorageValue(storageItemQuestDifficulty) == 1 then
-					tokens = math.random(1,2)
+					tokens = math.random(3,5)
 				elseif player:getStorageValue(storageItemQuestDifficulty) == 2 then
-					tokens = math.random(2,3)
+					tokens = math.random(5,7)
 				elseif player:getStorageValue(storageItemQuestDifficulty) == 3 then
-					tokens = math.random(3,4)
+					tokens = math.random(7,9)
 				end
 				player:addTokens(tokens)
-				npcHandler:say("Bom trabalho! Pegue " .. tokens .. " tokens como recompensa. Novo saldo: " .. player:getTokens() .. ".", cid)
+				npcHandler:say("Good job! Take " .. tokens .. " tokens as a reward. New balance: " .. player:getTokens() .. ".", cid)
 				player:setStorageValue(storageItemQuestDay, -1)
 				npcHandler:releaseFocus(cid)
 			end
 		else
-			npcHandler:say("Ja pegou seu premio de hoje. Retorne daqui " .. timeRemaining .. " segundos." , cid)
+			npcHandler:say("You already got today's prize. Return from here " .. timeRemaining .. " seconds." , cid)
 			npcHandler:releaseFocus(cid)
 		end
 	elseif (msgcontains(msg, "facil") or msgcontains(msg, "easy") or msgcontains(msg, "media") or msgcontains(msg, "medium") or msgcontains(msg, "dificil") or msgcontains(msg, "hard") )and npcHandler.topic[cid] == 1 then
@@ -83,14 +83,14 @@ local function creatureSayCallback(cid, type, msg)
 		end
 		player:setStorageValue(storageItemQuestNumber, number)
 		player:setStorageValue(storageItemQuestItem, itemType:getId())
-		npcHandler:say("Sei que voce e bom. Vamos ver se hoje voce consegue me trazer {" .. number .." " .. itemName .. "}.", cid)
+		npcHandler:say("I know you are good. Let's see if you can bring me in today {" .. number .." " .. itemName .. "}.", cid)
 		npcHandler:releaseFocus(cid)
 	else
 		if npcHandler.topic[cid] == 0 then
-			npcHandler:say("Nao entendi. Gostaria de me {ajudar} com uma {task}?", cid)
+			npcHandler:say("I don't understand. Would you like to help me with a {quest}?", cid)
 			return tue
 		elseif npcHandler.topic[cid] == 1 then
-			npcHandler:say("Nao entendi. Gostaria de uma task {facil}, {media} ou {dificil}?", cid)
+			npcHandler:say("I don't understand. Would you like an {easy}, {medium} or {hard} task?", cid)
 			return tue
 		end
 
