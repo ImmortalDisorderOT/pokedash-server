@@ -1,60 +1,60 @@
 <?xml version="1.0"?>
 <houses>
-	<house name="Saffron House #1" houseid="1" entryx="1065" entryy="1021" entryz="7" rent="24000" townid="34" size="24" />
-	<house name="Saffron House #2" houseid="2" entryx="1057" entryy="1032" entryz="7" rent="40000" townid="34" size="40" />
-	<house name="Saffron House #3" houseid="3" entryx="1048" entryy="1032" entryz="7" rent="45000" townid="34" size="45" />
-	<house name="Saffron House #4" houseid="4" entryx="1039" entryy="1032" entryz="7" rent="35000" townid="34" size="35" />
-	<house name="Saffron House #5" houseid="5" entryx="1030" entryy="1036" entryz="7" rent="20000" townid="34" size="20" />
-	<house name="Saffron House #6" houseid="6" entryx="1031" entryy="1045" entryz="7" rent="27000" townid="34" size="27" />
-	<house name="Saffron House #7" houseid="7" entryx="1032" entryy="1045" entryz="7" rent="31000" townid="34" size="31" />
-	<house name="Saffron House #8" houseid="8" entryx="1032" entryy="1052" entryz="7" rent="77000" townid="34" size="77" />
-	<house name="Saffron House #9" houseid="9" entryx="1020" entryy="1064" entryz="7" rent="49000" townid="34" size="49" />
-	<house name="Saffron House #10" houseid="10" entryx="1012" entryy="1064" entryz="7" rent="49000" townid="34" size="49" />
-	<house name="Saffron House #11" houseid="11" entryx="1004" entryy="1064" entryz="7" rent="40000" townid="34" size="40" />
-	<house name="Saffron House #12" houseid="12" entryx="1016" entryy="1073" entryz="7" rent="55000" townid="34" size="55" />
-	<house name="Saffron House #13" houseid="13" entryx="1004" entryy="1069" entryz="7" rent="40000" townid="34" size="40" />
-	<house name="Saffron House #14" houseid="14" entryx="1016" entryy="1082" entryz="7" rent="49000" townid="34" size="49" />
-	<house name="Saffron House #15" houseid="15" entryx="1021" entryy="1083" entryz="7" rent="18000" townid="34" size="18" />
-	<house name="Saffron House #16" houseid="16" entryx="1030" entryy="1087" entryz="7" rent="20000" townid="34" size="20" />
-	<house name="Saffron House #17" houseid="17" entryx="1030" entryy="1093" entryz="7" rent="25000" townid="34" size="25" />
-	<house name="Saffron House #18" houseid="18" entryx="1031" entryy="1094" entryz="7" rent="56000" townid="34" size="56" />
-	<house name="Saffron House #19" houseid="19" entryx="1032" entryy="1089" entryz="7" rent="48000" townid="34" size="48" />
-	<house name="Saffron House #20" houseid="20" entryx="1057" entryy="1084" entryz="7" rent="168000" townid="34" size="168" />
-	<house name="Saffron House #21" houseid="21" entryx="1065" entryy="1087" entryz="7" rent="144000" townid="34" size="144" />
-	<house name="Saffron House #22" houseid="22" entryx="1065" entryy="1098" entryz="7" rent="128000" townid="34" size="128" />
-	<house name="Saffron House #23" houseid="23" entryx="1064" entryy="1105" entryz="7" rent="57000" townid="34" size="57" />
-	<house name="Saffron House #24" houseid="24" entryx="1056" entryy="1105" entryz="7" rent="52000" townid="34" size="52" />
-	<house name="Saffron House #25" houseid="25" entryx="1080" entryy="1059" entryz="7" rent="60000" townid="34" size="60" />
-	<house name="Saffron House #26" houseid="26" entryx="1077" entryy="1053" entryz="7" rent="83000" townid="34" size="83" />
-	<house name="Saffron House #27" houseid="27" entryx="1075" entryy="1042" entryz="7" rent="49000" townid="34" size="49" />
-	<house name="Saffron House #28" houseid="28" entryx="1105" entryy="1043" entryz="7" rent="118000" townid="34" size="118" />
-	<house name="Saffron House #29" houseid="29" entryx="1099" entryy="1032" entryz="7" rent="49000" townid="34" size="49" />
-	<house name="Saffron House #30" houseid="30" entryx="1090" entryy="1032" entryz="7" rent="49000" townid="34" size="49" />
-	<house name="Saffron House #31" houseid="31" entryx="1073" entryy="1029" entryz="7" rent="72000" townid="34" size="72" />
-	<house name="Saffron House #32" houseid="32" entryx="1073" entryy="1022" entryz="7" rent="98000" townid="34" size="98" />
-	<house name="Saffron House #33" houseid="33" entryx="1091" entryy="1019" entryz="7" rent="49000" townid="34" size="49" />
-	<house name="Saffron House #34" houseid="34" entryx="1100" entryy="1019" entryz="7" rent="49000" townid="34" size="49" />
-	<house name="Saffron House #35" houseid="35" entryx="1107" entryy="1019" entryz="7" rent="42000" townid="34" size="42" />
-	<house name="Saffron House #36" houseid="36" entryx="1053" entryy="1068" entryz="7" rent="174000" townid="34" size="174" />
-	<house name="Saffron House #37" houseid="37" entryx="1058" entryy="1068" entryz="7" rent="84000" townid="34" size="84" />
-	<house name="Saffron House #38" houseid="38" entryx="1029" entryy="1048" entryz="6" rent="35000" townid="34" size="35" />
-	<house name="Saffron House #39" houseid="39" entryx="1035" entryy="1048" entryz="6" rent="35000" townid="34" size="35" />
-	<house name="Saffron House #40" houseid="40" entryx="1029" entryy="1051" entryz="6" rent="40000" townid="34" size="40" />
-	<house name="Saffron House #41" houseid="41" entryx="1035" entryy="1051" entryz="6" rent="40000" townid="34" size="40" />
+	<house name="Saffron House #1" houseid="1" entryx="1065" entryy="1021" entryz="7" rent="24000" townid="34" size="23" />
+	<house name="Saffron House #2" houseid="2" entryx="1057" entryy="1032" entryz="7" rent="40000" townid="34" size="39" />
+	<house name="Saffron House #3" houseid="3" entryx="1048" entryy="1032" entryz="7" rent="45000" townid="34" size="44" />
+	<house name="Saffron House #4" houseid="4" entryx="1039" entryy="1032" entryz="7" rent="35000" townid="34" size="34" />
+	<house name="Saffron House #5" houseid="5" entryx="1030" entryy="1036" entryz="7" rent="20000" townid="34" size="19" />
+	<house name="Saffron House #6" houseid="6" entryx="1031" entryy="1045" entryz="7" rent="27000" townid="34" size="26" />
+	<house name="Saffron House #7" houseid="7" entryx="1032" entryy="1045" entryz="7" rent="31000" townid="34" size="30" />
+	<house name="Saffron House #8" houseid="8" entryx="1032" entryy="1052" entryz="7" rent="77000" townid="34" size="76" />
+	<house name="Saffron House #9" houseid="9" entryx="1020" entryy="1064" entryz="7" rent="49000" townid="34" size="48" />
+	<house name="Saffron House #10" houseid="10" entryx="1012" entryy="1064" entryz="7" rent="49000" townid="34" size="48" />
+	<house name="Saffron House #11" houseid="11" entryx="1004" entryy="1064" entryz="7" rent="40000" townid="34" size="39" />
+	<house name="Saffron House #12" houseid="12" entryx="1016" entryy="1073" entryz="7" rent="55000" townid="34" size="54" />
+	<house name="Saffron House #13" houseid="13" entryx="1004" entryy="1069" entryz="7" rent="40000" townid="34" size="39" />
+	<house name="Saffron House #14" houseid="14" entryx="1016" entryy="1082" entryz="7" rent="49000" townid="34" size="48" />
+	<house name="Saffron House #15" houseid="15" entryx="1021" entryy="1083" entryz="7" rent="18000" townid="34" size="17" />
+	<house name="Saffron House #16" houseid="16" entryx="1030" entryy="1087" entryz="7" rent="20000" townid="34" size="19" />
+	<house name="Saffron House #17" houseid="17" entryx="1030" entryy="1093" entryz="7" rent="25000" townid="34" size="24" />
+	<house name="Saffron House #18" houseid="18" entryx="1031" entryy="1094" entryz="7" rent="56000" townid="34" size="55" />
+	<house name="Saffron House #19" houseid="19" entryx="1032" entryy="1089" entryz="7" rent="48000" townid="34" size="47" />
+	<house name="Saffron House #20" houseid="20" entryx="1057" entryy="1084" entryz="7" rent="168000" townid="34" size="167" />
+	<house name="Saffron House #21" houseid="21" entryx="1065" entryy="1087" entryz="7" rent="144000" townid="34" size="143" />
+	<house name="Saffron House #22" houseid="22" entryx="1065" entryy="1098" entryz="7" rent="128000" townid="34" size="127" />
+	<house name="Saffron House #23" houseid="23" entryx="1064" entryy="1105" entryz="7" rent="57000" townid="34" size="56" />
+	<house name="Saffron House #24" houseid="24" entryx="1056" entryy="1105" entryz="7" rent="52000" townid="34" size="51" />
+	<house name="Saffron House #25" houseid="25" entryx="1080" entryy="1059" entryz="7" rent="60000" townid="34" size="59" />
+	<house name="Saffron House #26" houseid="26" entryx="1077" entryy="1053" entryz="7" rent="83000" townid="34" size="82" />
+	<house name="Saffron House #27" houseid="27" entryx="1075" entryy="1042" entryz="7" rent="49000" townid="34" size="48" />
+	<house name="Saffron House #28" houseid="28" entryx="1105" entryy="1043" entryz="7" rent="118000" townid="34" size="117" />
+	<house name="Saffron House #29" houseid="29" entryx="1099" entryy="1032" entryz="7" rent="49000" townid="34" size="48" />
+	<house name="Saffron House #30" houseid="30" entryx="1090" entryy="1032" entryz="7" rent="49000" townid="34" size="48" />
+	<house name="Saffron House #31" houseid="31" entryx="1073" entryy="1029" entryz="7" rent="72000" townid="34" size="71" />
+	<house name="Saffron House #32" houseid="32" entryx="1073" entryy="1022" entryz="7" rent="98000" townid="34" size="97" />
+	<house name="Saffron House #33" houseid="33" entryx="1091" entryy="1019" entryz="7" rent="49000" townid="34" size="48" />
+	<house name="Saffron House #34" houseid="34" entryx="1100" entryy="1019" entryz="7" rent="49000" townid="34" size="48" />
+	<house name="Saffron House #35" houseid="35" entryx="1107" entryy="1019" entryz="7" rent="42000" townid="34" size="41" />
+	<house name="Saffron House #36" houseid="36" entryx="1053" entryy="1068" entryz="7" rent="174000" townid="34" size="173" />
+	<house name="Saffron House #37" houseid="37" entryx="1058" entryy="1068" entryz="7" rent="84000" townid="34" size="83" />
+	<house name="Saffron House #38" houseid="38" entryx="1029" entryy="1048" entryz="6" rent="35000" townid="34" size="34" />
+	<house name="Saffron House #39" houseid="39" entryx="1035" entryy="1048" entryz="6" rent="35000" townid="34" size="34" />
+	<house name="Saffron House #40" houseid="40" entryx="1029" entryy="1051" entryz="6" rent="40000" townid="34" size="39" />
+	<house name="Saffron House #41" houseid="41" entryx="1035" entryy="1051" entryz="6" rent="40000" townid="34" size="39" />
 	<house name="Saffron House #42" houseid="42" entryx="1035" entryy="1053" entryz="5" rent="55000" townid="34" size="55" />
 	<house name="Saffron House #43" houseid="43" entryx="1033" entryy="1052" entryz="5" rent="35000" townid="34" size="35" />
 	<house name="Saffron House #44" houseid="44" entryx="1036" entryy="1048" entryz="5" rent="77000" townid="34" size="77" />
-	<house name="Saffron House #45" houseid="45" entryx="1029" entryy="1093" entryz="6" rent="16000" townid="34" size="16" />
-	<house name="Saffron House #46" houseid="46" entryx="1031" entryy="1090" entryz="6" rent="59000" townid="34" size="59" />
-	<house name="Saffron House #47" houseid="47" entryx="1039" entryy="1090" entryz="6" rent="36000" townid="34" size="36" />
-	<house name="Saffron House #48" houseid="48" entryx="1036" entryy="1092" entryz="6" rent="40000" townid="34" size="40" />
-	<house name="Saffron House #49" houseid="49" entryx="1029" entryy="1092" entryz="5" rent="64000" townid="34" size="64" />
-	<house name="Saffron House #50" houseid="50" entryx="1034" entryy="1089" entryz="5" rent="39000" townid="34" size="39" />
-	<house name="Saffron House #51" houseid="51" entryx="1036" entryy="1091" entryz="5" rent="16000" townid="34" size="16" />
-	<house name="Saffron House #52" houseid="52" entryx="1034" entryy="1092" entryz="5" rent="40000" townid="34" size="40" />
-	<house name="Saffron House #53" houseid="53" entryx="1093" entryy="1014" entryz="6" rent="49000" townid="34" size="203" />
-	<house name="Saffron House #54" houseid="54" entryx="1047" entryy="1034" entryz="6" rent="90000" townid="34" size="90" />
-	<house name="Saffron House #55" houseid="55" entryx="1050" entryy="1034" entryz="6" rent="115000" townid="34" size="115" />
+	<house name="Saffron House #45" houseid="45" entryx="1029" entryy="1093" entryz="6" rent="16000" townid="34" size="15" />
+	<house name="Saffron House #46" houseid="46" entryx="1031" entryy="1090" entryz="6" rent="59000" townid="34" size="58" />
+	<house name="Saffron House #47" houseid="47" entryx="1039" entryy="1090" entryz="6" rent="36000" townid="34" size="35" />
+	<house name="Saffron House #48" houseid="48" entryx="1036" entryy="1092" entryz="6" rent="40000" townid="34" size="39" />
+	<house name="Saffron House #49" houseid="49" entryx="1029" entryy="1092" entryz="5" rent="64000" townid="34" size="63" />
+	<house name="Saffron House #50" houseid="50" entryx="1034" entryy="1089" entryz="5" rent="39000" townid="34" size="38" />
+	<house name="Saffron House #51" houseid="51" entryx="1036" entryy="1091" entryz="5" rent="16000" townid="34" size="15" />
+	<house name="Saffron House #52" houseid="52" entryx="1034" entryy="1092" entryz="5" rent="40000" townid="34" size="39" />
+	<house name="Saffron House #53" houseid="53" entryx="1093" entryy="1014" entryz="6" rent="49000" townid="34" size="202" />
+	<house name="Saffron House #54" houseid="54" entryx="1047" entryy="1034" entryz="6" rent="90000" townid="34" size="89" />
+	<house name="Saffron House #55" houseid="55" entryx="1050" entryy="1034" entryz="6" rent="115000" townid="34" size="114" />
 	<house name="Saffron Guildhall #1" houseid="56" entryx="1068" entryy="1142" entryz="7" rent="770000" guildhall="true" townid="34" size="770" />
 	<house name="Eirian House #57" houseid="57" entryx="303" entryy="1324" entryz="7" rent="81000" townid="15" size="81" />
 	<house name="Eirian House #58" houseid="58" entryx="324" entryy="1329" entryz="7" rent="54000" townid="15" size="54" />
@@ -539,5 +539,5 @@
 	<house name="Blackthorn House #538" houseid="538" entryx="3144" entryy="934" entryz="7" rent="45000" townid="59" size="45" />
 	<house name="Blackthorn House #539" houseid="539" entryx="3150" entryy="934" entryz="7" rent="25000" townid="59" size="25" />
 	<house name="Blackthorn House #540" houseid="540" entryx="3157" entryy="934" entryz="7" rent="35000" townid="59" size="35" />
-	<house name="Island of Dreams" houseid="542" entryx="2252" entryy="1476" entryz="7" rent="0" townid="60" size="659" />
+	<house name="Island of Dreams" houseid="542" entryx="2252" entryy="1476" entryz="7" rent="0" townid="60" size="658" />
 </houses>
