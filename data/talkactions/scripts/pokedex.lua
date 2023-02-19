@@ -11,7 +11,7 @@ function onSay(player, words, param)
         player:sendTextMessage(MESSAGE_STATUS_CONSOLE_BLUE, "You need to pokedex this pokemon first!")
         return false
     end
-    
+
 	local output = "Pokedex of " .. param .. "\n"
 
 	local race = monsterType:getRaceName()
@@ -79,6 +79,7 @@ function onSay(player, words, param)
 		output = output .. "\nThis monster has no habilities."
 	end
 
-	player:sendTextMessage(MESSAGE_STATUS_CONSOLE_BLUE, output)
+	--player:sendTextMessage(MESSAGE_STATUS_CONSOLE_BLUE, output)
+    player:showTextDialog(2263, output)
     return false
 end
