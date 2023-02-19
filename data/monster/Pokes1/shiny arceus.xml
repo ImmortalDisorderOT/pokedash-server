@@ -2,7 +2,7 @@
 <monster name="Shiny Arceus" nameDescription="a shiny arceus" race="normal" race2="none" experience="8064" speed="1080" manacost="0">
 	<level min="95" max="100"/>
 	<health now="382500" max="382500" />
-	<look type="0" head="113" body="57" legs="95" feet="113" corpse="0" />
+	<look type="3101" head="113" body="57" legs="95" feet="113" corpse="0" />
 	<targetchange interval="5000" chance="30" />
 	<flags>
 		<flag summonable="1" />
