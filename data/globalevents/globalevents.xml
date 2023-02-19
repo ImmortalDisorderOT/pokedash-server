@@ -2,7 +2,7 @@
 <globalevents>
 	<globalevent type="startup" name="ServerStartup" script="startup.lua" />
 	<globalevent type="record" name="PlayerRecord" script="record.lua" />
-	<globalevent name="Server Save" interval="3600000" script="serversave.lua" />
+	<globalevent name="Server Save" interval="900000" script="serversave.lua" />
 	<globalevent name="Bag Event" interval="3600000" script="bagevent.lua" />
 	<globalevent name="Arena Event" interval="3600000" script="arenaevent.lua" />
 </globalevents>
