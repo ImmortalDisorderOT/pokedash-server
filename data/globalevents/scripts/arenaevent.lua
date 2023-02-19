@@ -1,7 +1,7 @@
 local secondsBetweenRaids = 15
 local eventFromPos = {646, 1198, 6}
 local eventToPos = {670, 1208, 6}
-local raids = {"ArenaRaticate", "ArenaOnix", "ArenaVileplume", "ArenaCharizard", "ArenaLendarios", "ArenaLendarios2", "ArenaLendarios4", "ArenaLendarios3", "ArenaLendarios3"}
+local raids = {"ArenaRaticate", "ArenaOnix", "ArenaVileplume", "ArenaCharizard", "ArenaLendarios", "ArenaLendarios2", "ArenaLendarios4", "ArenaLendarios3", "ArenaLendarios3", "FinalArenaWave"}
 local prizes = {[1] = {item = "crystal coin", count = 10}, [2] = {item = "empty premierball", count = 50}}
 
 local function cleanArena()

@@ -11,6 +11,7 @@
 	<raid name="ArenaLendarios2" file="poke/arenalendarios2.xml" interval2="9000" margin="9900" />
 	<raid name="ArenaLendarios3" file="poke/arenalendarios3.xml" interval2="9000" margin="9900" />
 	<raid name="ArenaLendarios4" file="poke/arenalendarios4.xml" interval2="9000" margin="9900" />
+	<raid name="FinalArenaWave" file="poke/finalarenawave.xml" interval2="9000" margin="9900" />
 
 	<raid name="Christmas Saffron" file="poke/christmassaffron.xml" interval2="9000" margin="9900" />
 	<raid name="Shiny Saffron" file="poke/shinysaffron.xml" interval2="9000" margin="9900" />
