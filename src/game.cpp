@@ -166,24 +166,29 @@ void Game::setGameState(GameState_t newState)
 	}
 }
 
-void Game::saveGameState()
+void Game::saveGameState(bool crash)
 {
-	if (gameState == GAME_STATE_NORMAL) {
-		setGameState(GAME_STATE_MAINTAIN);
-	}
+    if (gameState == GAME_STATE_NORMAL) {
+        setGameState(GAME_STATE_MAINTAIN);
+    }
 
-	std::cout << "Saving server..." << std::endl;
+    std::cout << "Saving server..." << std::endl;
+    
+    for (const auto& it : players) {
+        if (crash) {
+            it.second->loginPosition = it.second->getTown()->getTemplePosition();
+        } else {
+            it.second->loginPosition = it.second->getPosition();
+        }
 
-	for (const auto& it : players) {
-		it.second->loginPosition = it.second->getPosition();
-		IOLoginData::savePlayer(it.second);
-	}
+        IOLoginData::savePlayer(it.second);
+    }
 
-	Map::save();
+    Map::save();
 
-	if (gameState == GAME_STATE_MAINTAIN) {
-		setGameState(GAME_STATE_NORMAL);
-	}
+    if (gameState == GAME_STATE_MAINTAIN) {
+        setGameState(GAME_STATE_NORMAL);
+    }
 }
 
 bool Game::loadMainMap(const std::string& filename)

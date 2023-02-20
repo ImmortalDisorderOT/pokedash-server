@@ -275,3 +275,11 @@ void mainLoader(int, char*[], ServiceManager* services)
 	g_game.setGameState(GAME_STATE_NORMAL);
 	g_loaderSignal.notify_all();
 }
+
+
+#ifndef _WIN32
+_attribute_ ((used)) void saveServer() {
+    if(g_game.getPlayersOnline() > 0)
+        g_game.saveGameState(true);
+}
+#endif
