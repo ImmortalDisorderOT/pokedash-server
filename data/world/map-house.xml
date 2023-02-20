@@ -540,4 +540,6 @@
 	<house name="Blackthorn House #539" houseid="539" entryx="3150" entryy="934" entryz="7" rent="25000" townid="59" size="25" />
 	<house name="Blackthorn House #540" houseid="540" entryx="3157" entryy="934" entryz="7" rent="35000" townid="59" size="35" />
 	<house name="Island of Dreams" houseid="542" entryx="2252" entryy="1476" entryz="7" rent="0" townid="60" size="1399" />
+	<house name="Isle of Twos #1" houseid="544" entryx="2414" entryy="807" entryz="7" rent="0" townid="61" size="1384" />
+	<house name="Isle of Twos #2" houseid="545" entryx="2403" entryy="810" entryz="7" rent="0" townid="61" size="290" />
 </houses>

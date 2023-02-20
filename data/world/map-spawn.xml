@@ -10930,8 +10930,8 @@
 		<monster name="Lombre" x="4" y="-1" z="7" spawntime="180" />
 		<monster name="Vileplume" x="-2" y="0" z="7" spawntime="180" />
 	</spawn>
-	<spawn centerx="2452" centery="992" centerz="7" radius="1">
-		<monster name="toxicroak" x="0" y="0" z="7" spawntime="60" />
+	<spawn centerx="2451" centery="992" centerz="7" radius="1">
+		<monster name="toxicroak" x="1" y="0" z="7" spawntime="60" />
 	</spawn>
 	<spawn centerx="2454" centery="992" centerz="7" radius="1">
 		<monster name="toxicroak" x="0" y="0" z="7" spawntime="60" />
@@ -10966,8 +10966,8 @@
 	<spawn centerx="3208" centery="994" centerz="7" radius="1">
 		<monster name="Rampardos" x="0" y="0" z="7" spawntime="60" />
 	</spawn>
-	<spawn centerx="2450" centery="995" centerz="7" radius="1">
-		<monster name="Beautifly" x="0" y="0" z="7" spawntime="60" />
+	<spawn centerx="2449" centery="995" centerz="7" radius="1">
+		<monster name="Beautifly" x="1" y="0" z="7" spawntime="60" />
 	</spawn>
 	<spawn centerx="2455" centery="995" centerz="7" radius="1">
 		<monster name="Beautifly" x="0" y="0" z="7" spawntime="60" />
