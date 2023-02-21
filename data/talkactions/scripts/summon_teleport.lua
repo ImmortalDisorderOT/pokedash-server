@@ -1,5 +1,5 @@
 local delay = 1*60
-local availableCities = 60
+local availableCities = 61
 
 function onSay(player, words, param)
 	if param == "" then
